@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1013481342329",
+    "firebase_url": "https://finalproject-4d158.firebaseio.com",
+    "project_id": "finalproject-4d158",
+    "storage_bucket": "finalproject-4d158.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013481342329:android:b176c44d854c1599",
+        "android_client_info": {
+          "package_name": "edu.washington.snalegave.a448finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013481342329-5plih8idohs1r8gls5105l26rbnr06o5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.washington.snalegave.a448finalproject",
+            "certificate_hash": "4e5287195a8e34b36f16e5a7f91c7622dd208dca"
+          }
+        },
+        {
+          "client_id": "1013481342329-35etv6ddfuftavtc05mque970unflasr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlwCUdve624y0FGIbRZ89qetBlCGyOkE8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013481342329-35etv6ddfuftavtc05mque970unflasr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
