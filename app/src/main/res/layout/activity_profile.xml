@@ -4,31 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".profile">
 
-    <Button
-        android:id="@+id/profile"
+    <TextView
+        android:id="@+id/displayEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="96dp"
-        android:text="Your Profile"
+        android:layout_marginTop="24dp"
+        android:text="Hello!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/restaurantList"
+        android:id="@+id/logOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
-        android:text="Pick A Restaurant"
+        android:layout_marginTop="20dp"
+        android:text="Log Out"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile" />
-
+        app:layout_constraintTop_toBottomOf="@+id/displayEmail" />
 </android.support.constraint.ConstraintLayout>
