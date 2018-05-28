@@ -27,7 +27,7 @@ class Profile : AppCompatActivity() {
         }
         if (user != null) {
             displayEmail.text = "welcome, " + user.email
-            logOut.isEnabled = false
+            logOut.isEnabled = true
 
         }
 
