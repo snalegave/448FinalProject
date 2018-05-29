@@ -1,5 +1,6 @@
 package edu.washington.snalegave.a448finalproject
 
+import android.app.PendingIntent.getActivity
 import android.os.Bundle
 import android.os.Environment
 import android.support.v7.app.AppCompatActivity
@@ -11,6 +12,9 @@ import java.io.FileInputStream
 
 import java.io.Serializable
 import java.util.*
+import org.json.JSONException
+import org.json.JSONObject
+import java.io.IOException
 
 
 class FoodMenu : AppCompatActivity(){
@@ -21,13 +25,18 @@ class FoodMenu : AppCompatActivity(){
 
         val restaurants = ArrayList<objects.Restaurant>()
 
+
+        val TEST = applicationContext.getAssets().open("menu.json")
+
         // this grabs the JSON file from the ROOT DIRECTORY of the phone
         // which is under storage/emulated/0/
         // you can upload the file through View --> Tools Window --> Device File Explorer
         // (idk how to parse it from the assets folder)
-        val restaurant = File(Environment.getExternalStorageDirectory(), "menu.json")
-        val restaurantInput = FileInputStream(restaurant)
-        val input = restaurantInput.bufferedReader().use {it.readText() }
+        // val restaurant = File(Environment.getExternalStorageDirectory(), "menu.json")
+        // val restaurantInput = FileInputStream(restaurant)
+        // val input = restaurantInput.bufferedReader().use {it.readText() }
+
+        val input = TEST.bufferedReader().use {it.readText() }
 
         val questionsJSON = JSONArray(input)
 
@@ -66,7 +75,7 @@ class FoodMenu : AppCompatActivity(){
         foods.add("cat")
         foods.add("fish")
         foods.add("food name: " + restaurants.get(0).menu.get(0).name)
-        foods.add("food type:" + restaurants.get(0).menu.get(0).type)
+        foods.add("food type: " + restaurants.get(0).menu.get(0).type)
         foods.add("description: " + restaurants.get(0).menu.get(0).desc)
 
         foods.add("ingredients: " + restaurants.get(0).menu.get(0).ingredients[0] + " "
