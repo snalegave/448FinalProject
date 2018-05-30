@@ -88,6 +88,7 @@ class FoodMenu : AppCompatActivity(){
 
 
 
+
         // HOW TO RETRIEVE THE DATA :
         // restaurants.get(0).name would return JOEY KITCHEN
         // restaurants.get(0).menu.get(0).name would return SUSHI CONE
