@@ -14,21 +14,29 @@ class Profile : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
         val logOut = findViewById<Button>(R.id.logOutButton)
         val displayEmail = findViewById<TextView>(R.id.displayEmail)
-        logOut.isEnabled = false;
+
 
         val user = FirebaseAuth.getInstance().currentUser
         val auth = FirebaseAuth.getInstance()
 
 
         logOut.setOnClickListener{
-            auth.signOut()
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
+            if(user!=null) {
+                auth.signOut()
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            } else {
+                startActivity(Intent(this, LogInActivity::class.java))
+                finish()
+            }
         }
+
         if (user != null) {
             displayEmail.text = "welcome, " + user.email
-            logOut.isEnabled = true
+            logOut.text = "Log Out"
 
+        } else {
+            logOut.text = "Sign In"
         }
 
     }
