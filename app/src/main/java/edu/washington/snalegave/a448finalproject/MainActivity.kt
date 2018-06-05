@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Profile::class.java))
             Log.i("mainActivity", "pressed the profile button")
         }
+
+        restaurantList.setOnClickListener{
+            startActivity(Intent(this, RestaurantList::class.java))
+
+        }
     }
 }
 
