@@ -9,7 +9,6 @@ import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
-import kotlinx.android.synthetic.main.activity_food_menu.*
 import org.json.JSONArray
 import java.io.File
 import java.io.FileInputStream
@@ -27,9 +26,6 @@ class FoodMenu : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_menu)
 
-        filterButton.setOnClickListener{
-            startActivity(Intent(this, AllergyAndDishTypeSelection::class.java))
-        }
         val restaurants = ArrayList<objects.Restaurant>()
 
 
@@ -79,6 +75,9 @@ class FoodMenu : AppCompatActivity(){
 
         var foods:ArrayList<String> = ArrayList()
         for (i in 0..(restaurants.get(0).menu.size - 1)) {
+
+
+
             foods.add(restaurants.get(0).menu.get(i).name)
         }
 
@@ -115,7 +114,7 @@ interface objects {
     data class Restaurant(val name: String,
                           val desc: String,
                           val address: String,
-                          val phone: String,
+                          val phone: String,    
                           val menu: ArrayList<FoodItem>) : Serializable
 
     // food item domain object
