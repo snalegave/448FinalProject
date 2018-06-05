@@ -14,6 +14,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
+
         <TextView
             android:id="@+id/headerAllergyAndDishTypeSelection"
             android:layout_width="match_parent"
@@ -164,6 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_below = "@+id/choosingAllergensText"
             android:text="Entree"  />
+
         <CheckBox
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="10dp"
@@ -172,6 +175,7 @@
             android:layout_height="wrap_content"
             android:layout_below = "@+id/choosingAllergensText"
             android:text="Dessert"  />
+
         <CheckBox
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="10dp"
@@ -180,6 +184,12 @@
             android:layout_height="wrap_content"
             android:layout_below = "@+id/choosingAllergensText"
             android:text="Sides"  />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
 
     </LinearLayout>
 </ScrollView>
