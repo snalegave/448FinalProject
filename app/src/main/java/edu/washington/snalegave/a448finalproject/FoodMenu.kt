@@ -82,7 +82,7 @@ class FoodMenu : AppCompatActivity(){
             foods.add(restaurants.get(0).menu.get(i).name)
         }
 
-        // HOW TO RETRIEVE THE DATA :
+        // HOW TO RETRIEVE THE DATA : asdfasdf
         // restaurants.get(0).name would return JOEY KITCHEN
         // restaurants.get(0).menu.get(0).name would return SUSHI CONE
         // restaurants.get(0).menu.get(1).name would return GYOZA
