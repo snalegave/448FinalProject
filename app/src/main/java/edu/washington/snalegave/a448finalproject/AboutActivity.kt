@@ -3,6 +3,7 @@ package edu.washington.snalegave.a448finalproject
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.widget.TextView
 
 class AboutActivity: AppCompatActivity() {
@@ -20,19 +21,31 @@ class AboutActivity: AppCompatActivity() {
         val fooditem: objects.FoodItem = bundle.getSerializable("name") as objects.FoodItem
         var stringIngredients: String = ""
         stringIngredients += fooditem.ingredients.get(0)
-        for(i in fooditem.ingredients) {
-            stringIngredients += "," + i
+        if(fooditem.allergens.isEmpty()) {
+            stringIngredients = "No Ingredients"
         }
+        for(i in 1..fooditem.ingredients.size-1) {
+            stringIngredients += ", " + fooditem.ingredients.get(i)
+        }
+        stringIngredients = "Ingredients: " + stringIngredients
+
         var stringAllergens: String = ""
         stringAllergens += fooditem.allergens.get(0)
-        for(i in fooditem.allergens) {
-            stringAllergens += "," + i
+        if(fooditem.allergens.isEmpty()) {
+            stringAllergens = "No Allergens"
         }
-        name.setText(fooditem.name)
-        type.setText(fooditem.type)
+        for(i in 1..fooditem.allergens.size - 1) {
+            stringAllergens += ", " + fooditem.ingredients.get(i)
+        }
+
+
+
+        stringAllergens = "Allergens: " + stringAllergens
+        name.setText("Name of Dish: " + fooditem.name)
+        type.setText("Type of Dish: " + fooditem.type)
         ingredients.setText(stringIngredients)
         allergens.setText(stringAllergens)
-        desc.setText(fooditem.desc)
+        desc.setText("Description of Dish: " + fooditem.desc)
 
 
 
