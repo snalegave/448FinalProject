@@ -52,7 +52,6 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
 
 
         val dishTypeChecklist = findViewById(R.id.dishTypeCheckList) as FlexboxLayout
-
         val dishTypeCheckBox: CheckBox
         val dishTypeList = arrayListOf<String>()
 
@@ -88,9 +87,9 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
         submitButton.setOnClickListener {
             val intent = Intent(this, FoodMenu::class.java)
 
-            intent.putExtra("selectedAllergen", selectedAllergen);
-            intent.putExtra("selectedDishType", selectedDishType);
-
+            intent.putExtra("selectedAllergen", selectedAllergen)
+            intent.putExtra("selectedDishType", selectedDishType)
+            startActivity(intent)
 
         }
     }

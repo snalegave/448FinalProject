@@ -27,8 +27,6 @@ class FoodMenu : AppCompatActivity(){
         setContentView(R.layout.activity_food_menu)
 
 
-
-
         val TEST = applicationContext.getAssets().open("menu.json")
         val restaurants = ArrayList<objects.Restaurant>()
 
@@ -74,13 +72,37 @@ class FoodMenu : AppCompatActivity(){
         }
 
 
+
         var foods:ArrayList<String> = ArrayList()
         for (i in 0..(restaurants.get(0).menu.size - 1)) {
-
-
-
             foods.add(restaurants.get(0).menu.get(i).name)
         }
+
+
+        val intent : Intent = getIntent()
+        if(intent.hasExtra("selectedAllergen")) {
+            var allergensList: ArrayList<String> = intent.getStringArrayListExtra("selectedAllergen")
+            for(i in 0..(restaurants.get(0).menu.size - 1)) {
+                var foodItemAllergenList : List<String>  =  restaurants.get(0).menu.get(i).allergens
+                Log.i("dog", "allergens: " + restaurants.get(0).menu.get(i).allergens.toString())
+                Log.i("dog", "selectedAllergens: " + allergensList)
+                for(j in 0..foodItemAllergenList.size - 1) {
+                    for(k in 0..allergensList.size-1) {
+                        if (foodItemAllergenList.get(j).equals(allergensList.get(k), true)) {
+                            foods.remove(restaurants.get(0).menu.get(i).name)
+
+                            Log.i("asdf132","werew" + foods.toString())
+
+                        }
+                        Log.i("asdfasdf", "test")
+                    }
+                }
+            }
+
+            Log.i("dog", foods.toString())
+        }
+        Log.i("dog", "after:" + foods.size.toString())
+
 
         // HOW TO RETRIEVE THE DATA : asdfasdf
         // restaurants.get(0).name would return JOEY KITCHEN
