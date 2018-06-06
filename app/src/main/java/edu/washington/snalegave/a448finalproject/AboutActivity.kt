@@ -22,7 +22,7 @@ class AboutActivity: AppCompatActivity() {
         val fooditem = bundle.getSerializable("name") as FoodItem
         var stringIngredients: String = ""
         stringIngredients += fooditem.ingredients.get(0)
-        if(fooditem.allergens.isEmpty()) {
+        if(fooditem.ingredients.isEmpty()) {
             stringIngredients = "No Ingredients"
         }
         for(i in 1..fooditem.ingredients.size-1) {
@@ -36,7 +36,7 @@ class AboutActivity: AppCompatActivity() {
             stringAllergens = "No Allergens"
         }
         for(i in 1..fooditem.allergens.size - 1) {
-            stringAllergens += ", " + fooditem.ingredients.get(i)
+            stringAllergens += ", " + fooditem.allergens.get(i)
         }
 
 
