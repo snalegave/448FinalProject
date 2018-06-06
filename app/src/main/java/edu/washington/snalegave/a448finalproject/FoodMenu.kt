@@ -9,7 +9,6 @@ import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
-import kotlinx.android.synthetic.main.activity_food_menu.*
 import org.json.JSONArray
 import java.io.File
 import java.io.FileInputStream
@@ -27,9 +26,7 @@ class FoodMenu : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_menu)
 
-        filterButton.setOnClickListener{
-            startActivity(Intent(this, AllergyAndDishTypeSelection::class.java))
-        }
+
         val restaurants = ArrayList<objects.Restaurant>()
 
 
