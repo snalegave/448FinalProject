@@ -20,132 +20,72 @@ import org.json.JSONObject
 import java.io.IOException
 
 
-class FoodMenu : AppCompatActivity(){
+class FoodMenu : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_menu)
 
 
-        val TEST = applicationContext.getAssets().open("menu.json")
-        val restaurants = ArrayList<objects.Restaurant>()
+        val bundle: Bundle = intent.getBundleExtra("restaurant")
 
-        // this grabs the JSON file from the ROOT DIRECTORY of the phone
-        // which is under storage/emulated/0/
-        // you can upload the file through View --> Tools Window --> Device File Explorer
-        // (idk how to parse it from the assets folder)
-        // val restaurant = File(Environment.getExternalStorageDirectory(), "menu.json")
-        // val restaurantInput = FileInputStream(restaurant)
-        // val input = restaurantInput.bufferedReader().use {it.readText() }
+        val restaurant = bundle.getSerializable("restaurant") as Restaurant
 
-        val input = TEST.bufferedReader().use {it.readText() }
-
-        val questionsJSON = JSONArray(input)
+        val menu = restaurant.menu
 
 
-        for (i in 0..(questionsJSON.length() - 1)) {
-            val section = questionsJSON.getJSONObject(i)
-            val name = section.getString("restaurant")
-            val desc = section.getString("desc")
-            val address = section.getString("address")
-            val phone = section.getString("phone")
-            val items = section.getJSONArray("Menu")
+        var foods: ArrayList<String> = ArrayList()
 
-            // loop that iterates over every item on the food menu
-            val menu = arrayListOf<objects.FoodItem>()
-            for (j in 0..(items.length() - 1)) {
-                val menuSection = items.getJSONObject(j)
-                val foodName = menuSection.getString("name")
-                val type = menuSection.getString("type")
 
-                val ingredientsString = menuSection.getString("ingredients")
-                val ingredients = (ingredientsString.split(", "))
+        for (i in 0..(menu.size - 1)) {
 
-                val allergensString = menuSection.getString("allergens")
-                val allergens = (allergensString.split(", "))
+            foods.add(menu[i].name)
 
-                val description = menuSection.getString("description")
-
-                menu.add(objects.FoodItem(foodName, type, ingredients, allergens, description))
-            }
-            restaurants.add(objects.Restaurant(name, desc, address, phone, menu))
         }
 
 
-
-        var foods:ArrayList<String> = ArrayList()
-        for (i in 0..(restaurants.get(0).menu.size - 1)) {
-            foods.add(restaurants.get(0).menu.get(i).name)
-        }
-
-
-        val intent : Intent = getIntent()
-        if(intent.hasExtra("selectedAllergen")) {
+        val intent: Intent = getIntent()
+        if (intent.hasExtra("selectedAllergen")) {
             var allergensList: ArrayList<String> = intent.getStringArrayListExtra("selectedAllergen")
-            for(i in 0..(restaurants.get(0).menu.size - 1)) {
-                var foodItemAllergenList : List<String>  =  restaurants.get(0).menu.get(i).allergens
-                Log.i("dog", "allergens: " + restaurants.get(0).menu.get(i).allergens.toString())
+            for (i in 0..(menu.size - 1)) {
+                var foodItemAllergenList: List<String> = menu.get(i).allergens
+                Log.i("dog", "allergens: " + menu.get(i).allergens.toString())
                 Log.i("dog", "selectedAllergens: " + allergensList)
-                for(j in 0..foodItemAllergenList.size - 1) {
-                    for(k in 0..allergensList.size-1) {
+                for (j in 0..foodItemAllergenList.size - 1) {
+                    for (k in 0..allergensList.size - 1) {
                         if (foodItemAllergenList.get(j).equals(allergensList.get(k), true)) {
-                            foods.remove(restaurants.get(0).menu.get(i).name)
+                            foods.remove(menu.get(i).name)
 
-                            Log.i("asdf132","werew" + foods.toString())
+                            Log.i("asdf132", "werew" + foods.toString())
 
                         }
                         Log.i("asdfasdf", "test")
                     }
                 }
             }
-
-            Log.i("dog", foods.toString())
-        }
-        Log.i("dog", "after:" + foods.size.toString())
-
-
-        // HOW TO RETRIEVE THE DATA : asdfasdf
-        // restaurants.get(0).name would return JOEY KITCHEN
-        // restaurants.get(0).menu.get(0).name would return SUSHI CONE
-        // restaurants.get(0).menu.get(1).name would return GYOZA
-
-
-        val listView = findViewById<ListView>(R.id.ListView)
-        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_2, android.R.id.text1, foods)
-        listView.adapter = adapter
-        listView.setOnItemClickListener { parent, v, position, id ->
-            val intent = Intent(this, AboutActivity::class.java)
-            val bundle: Bundle = Bundle()
-            bundle.putSerializable("name", restaurants.get(0).menu.get(position))
-            intent.putExtras(bundle)
-            startActivity(intent)
         }
 
-        val filter = findViewById<Button>(R.id.filterButton)
-        filter.setOnClickListener {
-            startActivity(Intent(this, AllergyAndDishTypeSelection::class.java))
-            Log.i("mainActivity", "pressed the profile button")
-        }
 
+            Log.i("dog", "after:" + foods.size.toString())
+
+
+            val listView = findViewById<ListView>(R.id.ListView)
+            val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_2, android.R.id.text1, foods)
+            listView.adapter = adapter
+            listView.setOnItemClickListener { parent, v, position, id ->
+                val intent = Intent(this, AboutActivity::class.java)
+                val bundle: Bundle = Bundle()
+                bundle.putSerializable("name", menu[position])
+                intent.putExtras(bundle)
+                startActivity(intent)
+            }
+
+            val filter = findViewById<Button>(R.id.filterButton)
+            filter.setOnClickListener {
+                startActivity(Intent(this, AllergyAndDishTypeSelection::class.java))
+                Log.i("mainActivity", "pressed the profile button")
+            }
+
+        }
     }
-}
 
-// interface to store multiple restaurant / menu items
-interface objects {
-    // restaurant domain object
-    // serializable so these objects can pass through intent if needed through type serializable
-    data class Restaurant(val name: String,
-                          val desc: String,
-                          val address: String,
-                          val phone: String,    
-                          val menu: ArrayList<FoodItem>) : Serializable
-
-    // food item domain object
-    // INGREDIENTS AND ALLERGENS are stored as a LIST for sorting
-    data class FoodItem(val name: String,
-                        val type: String,
-                        val ingredients: List<String>,
-                        val allergens: List<String>,
-                        val desc: String) : Serializable
-
-}
