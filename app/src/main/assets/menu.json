@@ -4,6 +4,8 @@
         "desc": "At U-Village",
         "address": "2603 NE 46th St, Seattle, WA 98105",
         "phone": "2065276188",
+        "allergens": "dairy, eggs, gluten, fish",
+        "dishType":"appetizer, soup, salad",
         "Menu": [
             {
                 "name": "Sushi Cone",

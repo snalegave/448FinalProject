@@ -10,6 +10,7 @@ class AboutActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
+
         val name = findViewById<TextView>(R.id.name)
         val type = findViewById<TextView>(R.id.type)
         val ingredients = findViewById<TextView>(R.id.ingredients)
@@ -18,7 +19,7 @@ class AboutActivity: AppCompatActivity() {
 
         val intent: Intent = getIntent()
         val bundle: Bundle = intent.getExtras()
-        val fooditem: objects.FoodItem = bundle.getSerializable("name") as objects.FoodItem
+        val fooditem = bundle.getSerializable("name") as FoodItem
         var stringIngredients: String = ""
         stringIngredients += fooditem.ingredients.get(0)
         if(fooditem.allergens.isEmpty()) {

@@ -29,57 +29,62 @@ class FoodMenu : AppCompatActivity(){
 
 
 
-        val TEST = applicationContext.getAssets().open("menu.json")
-        val restaurants = ArrayList<objects.Restaurant>()
+//        val TEST = applicationContext.getAssets().open("menu.json")
+//        val restaurants = ArrayList<objects.Restaurant>()
+//
+//        // this grabs the JSON file from the ROOT DIRECTORY of the phone
+//        // which is under storage/emulated/0/
+//        // you can upload the file through View --> Tools Window --> Device File Explorer
+//        // (idk how to parse it from the assets folder)
+//        // val restaurant = File(Environment.getExternalStorageDirectory(), "menu.json")
+//        // val restaurantInput = FileInputStream(restaurant)
+//        // val input = restaurantInput.bufferedReader().use {it.readText() }
+//
+//        val input = TEST.bufferedReader().use {it.readText() }
+//
+//        val questionsJSON = JSONArray(input)
+//
+//
+//        for (i in 0..(questionsJSON.length() - 1)) {
+//            val section = questionsJSON.getJSONObject(i)
+//            val name = section.getString("restaurant")
+//            val desc = section.getString("desc")
+//            val address = section.getString("address")
+//            val phone = section.getString("phone")
+//            val items = section.getJSONArray("Menu")
+//
+//            // loop that iterates over every item on the food menu
+//            val menu = arrayListOf<objects.FoodItem>()
+//            for (j in 0..(items.length() - 1)) {
+//                val menuSection = items.getJSONObject(j)
+//                val foodName = menuSection.getString("name")
+//                val type = menuSection.getString("type")
+//
+//                val ingredientsString = menuSection.getString("ingredients")
+//                val ingredients = (ingredientsString.split(", "))
+//
+//                val allergensString = menuSection.getString("allergens")
+//                val allergens = (allergensString.split(", "))
+//
+//                val description = menuSection.getString("description")
+//
+//                menu.add(objects.FoodItem(foodName, type, ingredients, allergens, description))
+//            }
+//            restaurants.add(objects.Restaurant(name, desc, address, phone, menu))
+//        }
 
-        // this grabs the JSON file from the ROOT DIRECTORY of the phone
-        // which is under storage/emulated/0/
-        // you can upload the file through View --> Tools Window --> Device File Explorer
-        // (idk how to parse it from the assets folder)
-        // val restaurant = File(Environment.getExternalStorageDirectory(), "menu.json")
-        // val restaurantInput = FileInputStream(restaurant)
-        // val input = restaurantInput.bufferedReader().use {it.readText() }
 
-        val input = TEST.bufferedReader().use {it.readText() }
+        val bundle: Bundle = intent.getBundleExtra("restaurant")
 
-        val questionsJSON = JSONArray(input)
+        val restaurant = bundle.getSerializable("restaurant") as Restaurant
 
-
-        for (i in 0..(questionsJSON.length() - 1)) {
-            val section = questionsJSON.getJSONObject(i)
-            val name = section.getString("restaurant")
-            val desc = section.getString("desc")
-            val address = section.getString("address")
-            val phone = section.getString("phone")
-            val items = section.getJSONArray("Menu")
-
-            // loop that iterates over every item on the food menu
-            val menu = arrayListOf<objects.FoodItem>()
-            for (j in 0..(items.length() - 1)) {
-                val menuSection = items.getJSONObject(j)
-                val foodName = menuSection.getString("name")
-                val type = menuSection.getString("type")
-
-                val ingredientsString = menuSection.getString("ingredients")
-                val ingredients = (ingredientsString.split(", "))
-
-                val allergensString = menuSection.getString("allergens")
-                val allergens = (allergensString.split(", "))
-
-                val description = menuSection.getString("description")
-
-                menu.add(objects.FoodItem(foodName, type, ingredients, allergens, description))
-            }
-            restaurants.add(objects.Restaurant(name, desc, address, phone, menu))
-        }
-
+        val menu = restaurant.menu
 
         var foods:ArrayList<String> = ArrayList()
-        for (i in 0..(restaurants.get(0).menu.size - 1)) {
+        for (i in 0..(menu.size - 1)) {
 
 
-
-            foods.add(restaurants.get(0).menu.get(i).name)
+            foods.add(menu[i].name)
         }
 
         // HOW TO RETRIEVE THE DATA : asdfasdf
@@ -94,7 +99,7 @@ class FoodMenu : AppCompatActivity(){
         listView.setOnItemClickListener { parent, v, position, id ->
             val intent = Intent(this, AboutActivity::class.java)
             val bundle: Bundle = Bundle()
-            bundle.putSerializable("name", restaurants.get(0).menu.get(position))
+            bundle.putSerializable("name", menu[position])
             intent.putExtras(bundle)
             startActivity(intent)
         }
@@ -108,22 +113,22 @@ class FoodMenu : AppCompatActivity(){
     }
 }
 
-// interface to store multiple restaurant / menu items
-interface objects {
-    // restaurant domain object
-    // serializable so these objects can pass through intent if needed through type serializable
-    data class Restaurant(val name: String,
-                          val desc: String,
-                          val address: String,
-                          val phone: String,    
-                          val menu: ArrayList<FoodItem>) : Serializable
-
-    // food item domain object
-    // INGREDIENTS AND ALLERGENS are stored as a LIST for sorting
-    data class FoodItem(val name: String,
-                        val type: String,
-                        val ingredients: List<String>,
-                        val allergens: List<String>,
-                        val desc: String) : Serializable
-
-}
+//// interface to store multiple restaurant / menu items
+//interface objects {
+//    // restaurant domain object
+//    // serializable so these objects can pass through intent if needed through type serializable
+//    data class Restaurant(val name: String,
+//                          val desc: String,
+//                          val address: String,
+//                          val phone: String,
+//                          val menu: ArrayList<FoodItem>) : Serializable
+//
+//    // food item domain object
+//    // INGREDIENTS AND ALLERGENS are stored as a LIST for sorting
+//    data class FoodItem(val name: String,
+//                        val type: String,
+//                        val ingredients: List<String>,
+//                        val allergens: List<String>,
+//                        val desc: String) : Serializable
+//
+//}

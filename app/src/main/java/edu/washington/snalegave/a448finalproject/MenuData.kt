@@ -17,19 +17,23 @@ class MenuData: Application(){
 
         val TEST = applicationContext.getAssets().open("menu.json")
 
-        // this grabs the JSON file from the ROOT DIRECTORY of the phone
-        // which is under storage/emulated/0/
-        // you can upload the file through View --> Tools Window --> Device File Explorer
-        // (idk how to parse it from the assets folder)
-        // val restaurant = File(Environment.getExternalStorageDirectory(), "menu.json")
-        // val restaurantInput = FileInputStream(restaurant)
-        // val input = restaurantInput.bufferedReader().use {it.readText() }
-
         val input = TEST.bufferedReader().use {it.readText() }
+        dataObject = JsonMenuData(input)
 
-        val questionsJSON = JSONArray(input)
+    }
+    fun getRestaurants():List<Restaurant> {
+        return dataObject.getRestaurantList()
+    }
 
-        val restaurants = mutableListOf<Restaurant>()
+}
+
+class JsonMenuData (JsonFile:String):MenuObject{
+    val restaurants = mutableListOf<Restaurant>()
+
+    init {
+
+        val questionsJSON = JSONArray(JsonFile)
+
         for (i in 0..(questionsJSON.length() - 1)) {
             val section = questionsJSON.getJSONObject(i)
             val name = section.getString("restaurant")
@@ -57,14 +61,11 @@ class MenuData: Application(){
             }
             restaurants.add(Restaurant(name, desc, address, phone, menu))
         }
-
-        fun getRestaurants():List<Restaurant> {
-            return dataObject.getRestaurantList()
-        }
-
-
     }
 
+    override fun getRestaurantList(): List<Restaurant> {
+        return restaurants
+    }
 
 }
 data class Restaurant(val name: String,
