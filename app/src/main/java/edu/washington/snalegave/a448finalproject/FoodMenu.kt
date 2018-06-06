@@ -26,10 +26,10 @@ class FoodMenu : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_menu)
 
-        val restaurants = ArrayList<objects.Restaurant>()
 
 
         val TEST = applicationContext.getAssets().open("menu.json")
+        val restaurants = ArrayList<objects.Restaurant>()
 
         // this grabs the JSON file from the ROOT DIRECTORY of the phone
         // which is under storage/emulated/0/
