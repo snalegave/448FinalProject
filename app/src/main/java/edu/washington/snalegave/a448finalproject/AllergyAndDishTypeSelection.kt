@@ -69,7 +69,7 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
         submitButton.setOnClickListener {
  for(i in 0 until arrayOfCheckBox.size){
 
-     
+
 
         }
 //            intent.putExtra("milkCheckBox", milkCheckBox.isChecked)

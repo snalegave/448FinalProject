@@ -27,10 +27,10 @@ class FoodMenu : AppCompatActivity(){
         setContentView(R.layout.activity_food_menu)
 
 
-        val restaurants = ArrayList<objects.Restaurant>()
 
 
         val TEST = applicationContext.getAssets().open("menu.json")
+        val restaurants = ArrayList<objects.Restaurant>()
 
         // this grabs the JSON file from the ROOT DIRECTORY of the phone
         // which is under storage/emulated/0/
@@ -76,6 +76,9 @@ class FoodMenu : AppCompatActivity(){
 
         var foods:ArrayList<String> = ArrayList()
         for (i in 0..(restaurants.get(0).menu.size - 1)) {
+
+
+
             foods.add(restaurants.get(0).menu.get(i).name)
         }
 
@@ -112,7 +115,7 @@ interface objects {
     data class Restaurant(val name: String,
                           val desc: String,
                           val address: String,
-                          val phone: String,
+                          val phone: String,    
                           val menu: ArrayList<FoodItem>) : Serializable
 
     // food item domain object
