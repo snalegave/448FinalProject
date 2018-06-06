@@ -63,11 +63,11 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
         val arrayOfDishTypeCheckBox = arrayListOf<CheckBox>()
         //Array Containing selected dishTypes
         val selectedDishType = arrayListOf<String>()
-        for (i in 0 until allergenList.size) {
+        for (i in 0 until dishTypeList.size) {
             var dishTypeCheckBox = CheckBox(this)
             dishTypeCheckBox.setId(i)
-            dishTypeCheckBox.setText(allergenList.get(i))
-            dishTypeCheckBox.setTag(allergenList.get(i))
+            dishTypeCheckBox.setText(dishTypeList.get(i))
+            dishTypeCheckBox.setTag(dishTypeList.get(i))
             dishTypeCheckBox.setOnCheckedChangeListener(object : CompoundButton.OnCheckedChangeListener {
                 override fun onCheckedChanged(compoundButton: CompoundButton, b: Boolean) {
                     //If the checkbox is selected, add dish type to selected dish type List
