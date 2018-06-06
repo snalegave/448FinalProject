@@ -125,81 +125,81 @@
             app:alignItems="stretch"
             app:alignContent="stretch"
             android:orientation="horizontal">
-        <CheckBox
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/appetizerCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Appetizer"  />
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/appetizerCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Appetizer"  />-->
 
-        <CheckBox
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/soupCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Soup"  />
-        <CheckBox
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/saladCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Salad"  />
-        <CheckBox
-            android:id="@+id/sandwichCheckBox"
-            android:layout_marginLeft="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Sandwich"  />
-        <CheckBox
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/wokAndSauteeCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Wok And Sautee"  />
-        <CheckBox
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/steakCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Steak"  />
-        <CheckBox
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/entreeCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Entree"  />
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/soupCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Soup"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/saladCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Salad"  />-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/sandwichCheckBox"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Sandwich"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/wokAndSauteeCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Wok And Sautee"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/steakCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Steak"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/entreeCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Entree"  />-->
 
-        <CheckBox
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/dessertCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Dessert"  />
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/dessertCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Dessert"  />-->
 
-        <CheckBox
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/sideCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/choosingAllergensText"
-            android:text="Sides"  />
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/sideCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Sides"  />-->
         </com.google.android.flexbox.FlexboxLayout>
         <Button
             android:id="@+id/submitButton"

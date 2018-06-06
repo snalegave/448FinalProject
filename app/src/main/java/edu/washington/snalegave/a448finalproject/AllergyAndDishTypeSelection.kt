@@ -1,5 +1,6 @@
 package edu.washington.snalegave.a448finalproject
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -19,30 +20,35 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
 
         val allergenChecklist = findViewById(R.id.allergensCheckList) as FlexboxLayout
 
-        val checkbox:CheckBox
-        val list = arrayListOf<String>()
+        val allergenCheckBox: CheckBox
+        val allergenList = arrayListOf<String>()
 
-        list.add("Banners")
-        list.add("Poster")
-        list.add("Stickers")
-        val arrayOfCheckBox = arrayListOf<CheckBox>()
-        for (i in 0 until list.size)
-        {
-            var checkBox = CheckBox(this)
-            checkBox.setId(i)
-            checkBox.setText(list.get(i))
-            checkBox.setTag(list.get(i))
-            checkBox.setOnCheckedChangeListener(object:CompoundButton.OnCheckedChangeListener{
-                override fun onCheckedChanged(compoundButton:CompoundButton, b:Boolean) {
+        allergenList.add("Milk")
+        allergenList.add("Egg")
+        allergenList.add("Fish")
 
-                    if (b)
-                    {
-                        Log.d("hi", "h" + compoundButton.getTag().toString())
+        //Array Containg all of the checkBoxs for allergens
+        val arrayOfAllergenCheckBox = arrayListOf<CheckBox>()
+        //Array Containg selected Allergens
+        val selectedAllergen = arrayListOf<String>()
+        for (i in 0 until allergenList.size) {
+            var allergenCheckBox = CheckBox(this)
+            allergenCheckBox.setId(i)
+            allergenCheckBox.setText(allergenList.get(i))
+            allergenCheckBox.setTag(allergenList.get(i))
+            allergenCheckBox.setOnCheckedChangeListener(object : CompoundButton.OnCheckedChangeListener {
+                override fun onCheckedChanged(compoundButton: CompoundButton, b: Boolean) {
+                    //If the checkbox is selected, add Allergen to selected allergen List
+                    if (b) {
+                        selectedAllergen.add(compoundButton.getText().toString())
+                    } else {
+                        //If the checkbox is not selected, remove Allergen from selected allergen List
+                        selectedAllergen.remove(compoundButton.getText().toString())
                     }
                 }
             })
-            arrayOfCheckBox.add(checkBox)
-            allergenChecklist.addView(checkBox)
+            arrayOfAllergenCheckBox.add(allergenCheckBox)
+            allergenChecklist.addView(allergenCheckBox)
         }
 
 //        val milkCheckBox = findViewById(R.id.milkCheckBox) as CheckBox
@@ -65,10 +71,45 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
 //        val dessertCheckBox = findViewById(R.id.dessertCheckBox) as CheckBox
 //        val sideCheckBox = findViewById(R.id.sideCheckBox) as CheckBox
 
+        val dishTypeChecklist = findViewById(R.id.dishTypeCheckList) as FlexboxLayout
+
+        val dishTypeCheckBox: CheckBox
+        val dishTypeList = arrayListOf<String>()
+
+        allergenList.add("Entree")
+        allergenList.add("Salad")
+        allergenList.add("Dessert")
+
+        //Array Containg all of the checkBoxs for allergens
+        val arrayOfDishTypeCheckBox = arrayListOf<CheckBox>()
+        //Array Containg selected Allergens
+        val selectedDishType = arrayListOf<String>()
+        for (i in 0 until allergenList.size) {
+            var dishTypeCheckBox = CheckBox(this)
+            dishTypeCheckBox.setId(i)
+            dishTypeCheckBox.setText(allergenList.get(i))
+            dishTypeCheckBox.setTag(allergenList.get(i))
+            dishTypeCheckBox.setOnCheckedChangeListener(object : CompoundButton.OnCheckedChangeListener {
+                override fun onCheckedChanged(compoundButton: CompoundButton, b: Boolean) {
+                    //If the checkbox is selected, add Allergen to selected allergen List
+                    if (b) {
+                        selectedDishType.add(compoundButton.getText().toString())
+                    } else {
+                        //If the checkbox is not selected, remove Allergen from selected allergen List
+                        selectedDishType.remove(compoundButton.getText().toString())
+                    }
+                }
+            })
+            arrayOfDishTypeCheckBox.add(dishTypeCheckBox)
+            dishTypeChecklist.addView(dishTypeCheckBox)
+        }
+
 
         submitButton.setOnClickListener {
- for(i in 0 until arrayOfCheckBox.size){
+            val intent = Intent(this, FoodMenu::class.java)
 
+            intent.putExtra("selectedAllergen", selectedAllergen);
+            intent.putExtra("selectedDishType", selectedDishType);
 
 
         }
@@ -98,8 +139,8 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
 
 
 
-    }
-
-
-
 }
+
+
+
+
