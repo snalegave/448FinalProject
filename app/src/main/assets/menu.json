@@ -342,14 +342,14 @@
       {
         "name": "Molten Chocolate Cake",
         "type": "dessert",
-        "ingredients": "Soufflé, Vanilla ice cream, Raspberries, Raspberry puree",
+        "ingredients": "Soufflé, Vanilla ice cream, Raspberries, Raspberry puree, sugar",
         "allergens": "milk, eggs, gluten",
         "description": "Chocolate Soufflé with a decadent molten lava center. Served with vanilla ice cream, fresh raspberries, and raspberry puree."
       },
       {
         "name": "Raspberry Butterscotch Mousse",
         "type": "dessert",
-        "ingredients": "Butterscotch budino, Sponge toffee crush, Salted caramel sauce, Vanilla whipped cream, Raspberry purée, Raspberries",
+        "ingredients": "Butterscotch budino, Sponge toffee crush, Salted caramel sauce, Vanilla whipped cream, Raspberry purée, Raspberries, sugar",
         "allergens": "milk, eggs",
         "description": "An Italian classic with a JOEY twist, this melt in your mouth budino, or pudding, is layered with ‘crunchie’ bar filling, softly whipped and gently sweetened cream, fresh and tart raspberries and warm, sweet salted caramel. "
       },
