@@ -203,91 +203,91 @@
         "name": "BBQ Salmon Rice Bowl",
         "type": "wok and sautee",
         "ingredients": "Salmon fillet, White onion, Red pepper, Green pepper, Snap peas, Carrot, Button mushrooms, Edamame beans, Sweet sesame soy sauce, White or Brown rice, Daikon/Sesame seeds, Daikon sprouts",
-        "allergens": "",
+        "allergens": "fish, gluten",
         "description": "Grilled salmon served beside sautéed snap peas, shitake mushrooms, peppers onions and rice tossed in sweet and spicy Asian inspired sauce. "
       },
       {
         "name": "Chicken Chinatown Lettuce Wraps",
         "type": "wok and sautee",
         "ingredients": "Chicken, Red pepper, Carrot, Green onion, Hoisin glaze, Fried farkay noodles, Peanuts, Cilantro, Black and white sesame seeds, Baby ice berg lettuce cups, Soy chili sauce",
-        "allergens": "",
+        "allergens": "nuts, eggs, gluten",
         "description": "Roll your own lettuce wraps with fresh wok fried vegetables, crisp farkay noodles, peanuts and cilantro in crisp baby iceberg lettuce cups."
       },
       {
         "name": "Shrimp Lettuce Wraps",
         "type": "wok and sautee",
         "ingredients": "Shrimp, Red pepper, Mushrooms, Carrot, Red onion, Green onion, Nappa cabbage, Water, chestnuts, Hoisin glaze, Fried farkay noodles, Peanuts, Cilantro, Baby ice berg lettuce cups, Soy, chili sauce",
-        "allergens": "",
+        "allergens": "fish, nuts, eggs, gluten",
         "description": "Roll your own lettuce wraps with fresh wok fried vegetables, crisp farkay noodles, peanuts and cilantro in crisp baby iceberg lettuce cups."
       },
       {
         "name": "Vegetable and Vegetarian Lettuce Wraps",
         "type": "wok and sautee",
         "ingredients": "Soy, Red pepper, Mushrooms, Carrot, Red onion, Green onion, Nappa cabbage, Zucchini, Hoisin glaze, Fried farkay noodles, Peanuts, Cilantro, Baby ice berg lettuce cups, Soy chili sauce",
-        "allergens": "",
+        "allergens": "nuts, fish, eggs, gluten",
         "description": "Roll your own lettuce wraps with fresh wok fried vegetables, crisp farkay noodles, peanuts and cilantro in crisp baby iceberg lettuce cups."
       },
       {
         "name": "New York Steak",
         "type": "steak",
         "ingredients": "11 oz New York strip loin, Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion Yellow cheddar, Seasonal Vegetables, Garlic butter, JOEY steak spice",
-        "allergens": "",
+        "allergens": "milk, eggs, gluten",
         "description": "New York strip loin grilled with our signature steak spice served with crispy mashed potato spring rolls and seasonal vegetables."
       },
       {
         "name": "Peppercorn New York",
         "type": "steak",
         "ingredients": "11 oz New York strip loin, Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion Yellow cheddar, Seasonal Vegetables, Garlic butter, Joeys Steak spice, Peppercorn sauce",
-        "allergens": "",
+        "allergens": "milk, eggs, gluten",
         "description": "New York strip loin grilled with our signature steak spice and cooked to perfection and served with a crispy mashed potato spring rolls, seasonal vegetables and house made peppercorn sauce."
       },
       {
         "name": "Filet Mignon",
         "type": "steak",
         "ingredients": "7 oz Tenderloin Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion Yellow cheddar, Seasonal Vegetables, Garlic butter, JOEY steak spice",
-        "allergens": "",
+        "allergens": "milk, eggs, gluten",
         "description": "7oz Filet grilled to perfection and served with our fully loaded crispy mashed potatoes and seasonal vegetables"
       },
       {
         "name": "CAB PRIME Sirloin",
         "type": "steak",
         "ingredients": "7 oz Sirloin, Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion, Yellow cheddar, Seasonal Vegetables,Garlic butter,JOEY steak spice",
-        "allergens": "",
+        "allergens": "milk, eggs, gluten",
         "description": "Prime sirloin grilled with our signature steak spice served with a crispy mashed potato spring rolls and seasonal vegetables"
       },
       {
         "name": "Blue Cheese Sirloin",
         "type": "steak",
         "ingredients": "7 oz Sirloin, Mashed Potato Spring Rolls: Sour cream, Bacon bits,Green onion, Yellow cheddar, gratedSeasonal Vegetables,JOEY steak spice, Blue cheese butter",
-        "allergens": "",
+        "allergens": "milk, eggs, gluten",
         "description": "Prime sirloin grilled to perfection topped with blue cheese butter and served with crispy mashed potatoes and seasonal vegetables."
       },
       {
         "name": "Steak & Prawns",
         "type": "steak",
         "ingredients": "7 oz Sirloin, Crispy mashed potato, Sour cream Bacon bits, Green onion Cheddar cheese, Seasonal vegetables, Garlic butter",
-        "allergens": "",
+        "allergens": "milk, eggs, gluten, fish",
         "description": "Prime sirloin grilled with our signature steak spice served with a crispy mashed potato spring roll and seasonal vegetables"
       },
       {
         "name": "Steak & Rainbow USA",
         "type": "steak",
         "ingredients": "5 oz Sirloin Steak, Ponzu sauce, Garlic chili sauce, Salmon Sushi rice, Umami mayo, Crispy tempura bits, Lime, Shaved serrano peppers",
-        "allergens": "",
+        "allergens": "milk, eggs, gluten, fish",
         "description": "Tataki style sirloin served with our colourful avocado, tuna, and salmon rainbow roll."
       },
       {
         "name": "Steak Frites Parsley Butter",
         "type": "steak",
         "ingredients": "5oz Sirloin steak, Garlic butter, Parsley butter, JOEY steak spice, Arugula Burger tomato slices, Balsamic olive oil dressing, French fries",
-        "allergens": "",
+        "allergens": "milk, gluten",
         "description": "Sirloin grilled to perfection and seasoned with our proprietary steak spice, and topped with a round of parsley butter. Served with a lightly tossed arugula salad and our signature skinny fries"
       },
       {
         "name": "Steak & Pressed Sushi USA",
         "type": "steak",
         "ingredients": "5 oz Sirloin Steak, Ponzu sauce, Garlic chili sauce, Salmon Sushi rice, Umami mayo, Crispy tempura bits, Lime, Shaved serrano peppers",
-        "allergens": "",
+        "allergens": "milk, eggs, gluten, fish",
         "description": "Tataki style sirloin served with our Osaka style pressed salmon sushi."
       },
 
@@ -295,7 +295,7 @@
         "name": "Balsamic Braised Beef Short Ribs",
         "type": "entree",
         "ingredients": "Braised Short Rib, Jus, Mashed potatoes, Asparagus, Grape tomatoes, Pickled shimeji mushrooms, Shallots, Rosemary salt",
-        "allergens": "milk, egg, gluten",
+        "allergens": "milk, eggs, gluten",
         "description": "The short ribs in this dish are slow braised and fork tender. Served with mashed potatoes, asparagus and a rich jus, this dish is the epitome of comfort food."
       },
       {
@@ -316,7 +316,7 @@
         "name": "Bistro Plate",
         "type": "entree",
         "ingredients": "Rotisserie chicken, French fries, Coleslaw, Sundried tomato gravy",
-        "allergens": "milk, egg, gluten",
+        "allergens": "milk, eggs, gluten",
         "description": "Slow roasted rotisserie chicken accompanied by signature fries, coleslaw and sundried tomatov gravy. "
       },
       {
@@ -330,21 +330,21 @@
         "name": "Chef's Daily Rotisserie",
         "type": "entree",
         "ingredients": "Hourly roasted rotisserie chicken, Mashed potatoes, Cauliflower, Snap peas, Red pepper, Grilled corn, selection of sauces",
-        "allergens": "milk, egg, gluten, nuts, fish",
+        "allergens": "milk, eggs, gluten, nuts, fish",
         "description": "Our rotating feature chicken program allows us to offer our signature spit roasted chicken that has been brined for 24 hours to ensure moistness by combining it with carefully selected global flavors."
       },
       {
         "name": "Individually Baked Apple Pie",
         "type": "dessert",
         "ingredients": "Puff pastry, Roasted apples, Cinnamon, Rolled oats, Almonds, Brown sugar, Icing sugar, Caramel Sauce, Ice cream",
-        "allergens": "milk, egg, gluten, nuts",
+        "allergens": "milk, eggs, gluten, nuts",
         "description": "Baked to order, hand-folded apple pie drizzled with caramel sauce and topped with your choice of maple or vanilla ice cream"
       },
       {
         "name": "Molten Chocolate Cake",
         "type": "dessert",
         "ingredients": "Soufflé, Vanilla ice cream, Raspberries, Raspberry puree",
-        "allergens": "milk, egg, gluten",
+        "allergens": "milk, eggs, gluten",
         "description": "Chocolate Soufflé with a decadent molten lava center. Served with vanilla ice cream, fresh raspberries, and raspberry puree."
       },
       {
@@ -358,99 +358,99 @@
         "name": "Garlic Bread",
         "type": "side",
         "ingredients": "Garlic bread",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, eggs, gluten",
+        "description": "Garlic Bread"
       },
       {
         "name": "Side Aromatic Rice",
         "type": "side",
         "ingredients": "",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk",
+        "description": "Aromatic Rice"
       },
       {
         "name": "Side Asparagus",
         "type": "side",
         "ingredients": "Asparagus",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk",
+        "description": "Asparagus"
       },
       {
         "name": "Prawn Skewer",
         "type": "side",
         "ingredients": "Prawns",
         "allergens": "",
-        "description": ""
+        "description": "Prawn Skewer"
       },
       {
         "name": "Side Papadam",
         "type": "side",
         "ingredients": "papadam",
-        "allergens": "",
-        "description": ""
+        "allergens": "gluten",
+        "description": "Papadam"
       },
       {
         "name": "Side Fries",
         "type": "side",
         "ingredients": "potatoes",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, fish",
+        "description": "Fries"
       },
       {
         "name": "Side Naan Bread",
         "type": "side",
         "ingredients": "Naan",
-        "allergens": "",
-        "description": ""
+        "allergens": "gluten, diary, eggs",
+        "description": "Naan Bread"
       },
       {
         "name": "Mashed Potatoes",
         "type": "side",
         "ingredients": "Potatoes",
         "allergens": "",
-        "description": ""
+        "description": "Mashed Potatoes"
       },
       {
         "name": "Side Brown Rice",
         "type": "side",
         "ingredients": "brown rice",
         "allergens": "",
-        "description": ""
+        "description": "Brown Rice"
       },
       {
         "name": "Side Quinoa",
         "type": "side",
         "ingredients": "quinoa",
         "allergens": "",
-        "description": ""
+        "description": "Organic Red Quinoa"
       },
       {
         "name": "Side Peppercorn Sauce",
         "type": "side",
         "ingredients": "peppercorn",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, gluten",
+        "description": "A creamy peppercorn, brandy and demi-glace reduction"
       },
       {
         "name": "Side Crispy Mashed Potato",
         "type": "side",
         "ingredients": "potatoes",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, eggs, gluten",
+        "description": "Mashed potatoes rolled in a spring roll wrapper garnished with all of the toppings you would expect on a baked potato; bacon, sour cream, cheddar cheese and green onion."
       },
       {
         "name": "Grilled Seasonal Vegetables",
         "type": "side",
         "ingredients": "Seasonal Vegatables",
         "allergens": "",
-        "description": ""
+        "description": "Grilled Seasonal Vegetables"
       },
       {
         "name": "Side White Rice",
         "type": "side",
         "ingredients": "white rice",
         "allergens": "",
-        "description": ""
+        "description": "White Rice"
       },
       {
         "name": "allergen free dish aka Water",
