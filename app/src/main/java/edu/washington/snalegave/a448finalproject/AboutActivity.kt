@@ -53,6 +53,7 @@ class AboutActivity: AppCompatActivity() {
         val reactionButton = findViewById<Button>(R.id.allergyAlert)
         allergyAlert.setOnClickListener{
 
+
         }
     }
 }

@@ -108,6 +108,12 @@ class FoodMenu : AppCompatActivity() {
             intent.putExtras(bundle)
             startActivity(intent)
         }
+
+        val backButton = findViewById<Button>(R.id.back)
+        backButton.setOnClickListener{
+            val intent = Intent(this, RestaurantList::class.java)
+            startActivity(intent)
+        }
     }
 }
 

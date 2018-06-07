@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu_top" />
+        app:srcCompat="@drawable/menu_with_back" />
 
     <ListView
         android:id="@+id/ListView"
@@ -62,4 +62,12 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/filterButton"
         app:layout_constraintTop_toBottomOf="@+id/ListView" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="111dp"
+        android:layout_height="95dp"
+        android:background="@android:color/transparent"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="3dp" />
 </android.support.constraint.ConstraintLayout>
