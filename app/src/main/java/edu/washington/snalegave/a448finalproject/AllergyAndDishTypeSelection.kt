@@ -95,6 +95,7 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
         val dietList = arrayListOf<String>()
 
         dietList.add("Fodmod")
+        dietList.add("No artificially added sugar")
 
         //Array Containg all of the checkBoxs for Diets
         val arrayOfDietCheckBox = arrayListOf<CheckBox>()

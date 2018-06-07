@@ -62,18 +62,36 @@ class FoodMenu : AppCompatActivity() {
                     "Mangoes", "Apples", "Pears", "Watermelon", "Cherries", "Blackberries",
                     "Beans", "lentils", "Wheat", "rye", "Breads", "Cereals", "Pastas", "Crackers", "Pizza", "Milk",
                     "Soft cheese", "Yogurt", "Ice cream", "Custard", "Pudding", "Cottage cheese")
+
+            var NoSugarDietIngredients: MutableSet<String> = hashSetOf("Sugar", "High Fructose Corn Syrup", "Brown Sugar")
+
+            var dietList: ArrayList<String> = intent.getStringArrayListExtra("selectedDiet")
+
             for (i in 0..(menu.size - 1)) {
                 var ingredientList: List<String> = menu.get(i).ingredients
                 for (h in 0..(ingredientList.size - 1)) {
-                    for (s in FodDietIngredients) {
-                        if (s.equals(ingredientList.get(h), ignoreCase = true)) {
-                            foods.remove(menu.get(i).name)
-                            Log.i("u2", menu.get(i).name)
+                    for(k in 0..(dietList.size - 1)) {
+                        if(k.equals("FodMap")) {
+                            for (s in FodDietIngredients) {
+                                if (s.equals(ingredientList.get(h), ignoreCase = true)) {
+                                    foods.remove(menu.get(i).name)
+                                    Log.i("u2", menu.get(i).name)
+                                }
+                            }
+                        }
+                        if(k.equals("No artificially added sugar")){
+                            for (s in NoSugarDietIngredients) {
+                                if (s.equals(ingredientList.get(h), ignoreCase = true)) {
+                                    foods.remove(menu.get(i).name)
+                                    Log.i("u3", menu.get(i).name)
+                                }
+                            }
+                            }
                         }
                     }
                 }
             }
-        }
+
         if (intent.hasExtra("selectedDishType") &&!intent.getStringArrayListExtra("selectedDishType").isEmpty()) {
             var selectedDishList: ArrayList<String> = intent.getStringArrayListExtra("selectedDishType")
             var lowerCaseDish :ArrayList<String> = arrayListOf()
