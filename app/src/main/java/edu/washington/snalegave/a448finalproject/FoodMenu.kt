@@ -56,6 +56,8 @@ class FoodMenu : AppCompatActivity() {
             }
         }
         if(intent.hasExtra("selectedDiet") && !intent.getStringArrayListExtra("selectedDiet").isEmpty()) {
+
+            Log.i("u4", "intentExist")
             var FodDietIngredients: MutableSet<String> = hashSetOf("Onions", "Garlic", "Cabbage", "Broccoli",
                     "Cauliflower", "Snow peas", "Asparagus", "Artichokes", "Leeks", "Beetroot", "Celery", "Sweet corn",
                     "Brussels sprouts", "Mushrooms", "Peaches", "Apricots", "Nectarines", "Plums", "Prunes",
@@ -70,8 +72,10 @@ class FoodMenu : AppCompatActivity() {
             for (i in 0..(menu.size - 1)) {
                 var ingredientList: List<String> = menu.get(i).ingredients
                 for (h in 0..(ingredientList.size - 1)) {
-                    for(k in 0..(dietList.size - 1)) {
-                        if(k.equals("FodMap")) {
+                    for(k in 0..(dietList.size -1)) {
+                        Log.i("u6", dietList.get(k))
+                        if(dietList.get(k).equals("FodMap")) {
+                            Log.i("u5", menu.get(i).name)
                             for (s in FodDietIngredients) {
                                 if (s.equals(ingredientList.get(h), ignoreCase = true)) {
                                     foods.remove(menu.get(i).name)
@@ -79,8 +83,10 @@ class FoodMenu : AppCompatActivity() {
                                 }
                             }
                         }
-                        if(k.equals("No artificially added sugar")){
+                        if(dietList.get(k).equals("No artificially added sugar")){
+                            Log.i("u3", menu.get(i).name)
                             for (s in NoSugarDietIngredients) {
+
                                 if (s.equals(ingredientList.get(h), ignoreCase = true)) {
                                     foods.remove(menu.get(i).name)
                                     Log.i("u3", menu.get(i).name)
