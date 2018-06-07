@@ -251,14 +251,14 @@
       {
         "name": "CAB PRIME Sirloin",
         "type": "steak",
-        "ingredients": "7 oz Sirloin, Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion, Yellow cheddar, Seasonal Vegetables,Garlic butter,JOEY steak spice",
+        "ingredients": "7 oz Sirloin, Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion, Yellow cheddar, Seasonal Vegetables,Garlic butter,JOEY steak spice",
         "allergens": "milk, eggs, gluten",
         "description": "Prime sirloin grilled with our signature steak spice served with a crispy mashed potato spring rolls and seasonal vegetables"
       },
       {
         "name": "Blue Cheese Sirloin",
         "type": "steak",
-        "ingredients": "7 oz Sirloin, Mashed Potato Spring Rolls: Sour cream, Bacon bits,Green onion, Yellow cheddar, gratedSeasonal Vegetables,JOEY steak spice, Blue cheese butter",
+        "ingredients": "7 oz Sirloin, Mashed Potato Spring Rolls: Sour cream, Bacon bits,Green onion, Yellow cheddar, gratedSeasonal Vegetables,JOEY steak spice, Blue cheese butter",
         "allergens": "milk, eggs, gluten",
         "description": "Prime sirloin grilled to perfection topped with blue cheese butter and served with crispy mashed potatoes and seasonal vegetables."
       },
@@ -290,7 +290,6 @@
         "allergens": "milk, eggs, gluten, fish",
         "description": "Tataki style sirloin served with our Osaka style pressed salmon sushi."
       },
-
       {
         "name": "Balsamic Braised Beef Short Ribs",
         "type": "entree",
@@ -729,3 +728,4 @@
     ]
   }
 ]
+
