@@ -18,6 +18,7 @@ import java.util.*
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException
+import kotlin.collections.HashSet
 
 
 class FoodMenu : AppCompatActivity() {
@@ -26,36 +27,41 @@ class FoodMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_menu)
 
-
         val bundle: Bundle = intent.getBundleExtra("restaurant")
-
         val restaurant = bundle.getSerializable("restaurant") as Restaurant
-
         val menu = restaurant.menu
-
-
         var foods: ArrayList<String> = ArrayList()
-
-
         for (i in 0..(menu.size - 1)) {
-
             foods.add(menu[i].name)
-
         }
-
+        Log.i("fod1", foods.toString())
 
         val intent: Intent = getIntent()
         if (intent.hasExtra("selectedAllergen")) {
+            var FodDietIngredients: MutableSet<String> = hashSetOf("Onions", "Garlic", "Cabbage", "Broccoli",
+                    "Cauliflower", "Snow peas", "Asparagus", "Artichokes", "Leeks", "Beetroot", "Celery", "Sweet corn",
+                    "Brussels sprouts", "Mushrooms", "Peaches", "Apricots", "Nectarines", "Plums", "Prunes",
+                    "Mangoes", "Apples", "Pears", "Watermelon", "Cherries", "Blackberries",
+                    "Beans", "lentils", "Wheat", "rye", "Breads", "Cereals", "Pastas", "Crackers", "Pizza", "Milk",
+                    "Soft cheese", "Yogurt", "Ice cream", "Custard", "Pudding", "Cottage cheese")
             var allergensList: ArrayList<String> = intent.getStringArrayListExtra("selectedAllergen")
             for (i in 0..(menu.size - 1)) {
                 var foodItemAllergenList: List<String> = menu.get(i).allergens
+                var ingredientList: List<String> = menu.get(i).ingredients
+                for(h in 0..(ingredientList.size - 1)) {
+                    for(s in FodDietIngredients) {
+                        if(s.equals(ingredientList.get(h), ignoreCase = true)) {
+                            foods.remove(menu.get(i).name)
+
+                        }
+                    }
+                }
                 Log.i("dog", "allergens: " + menu.get(i).allergens.toString())
                 Log.i("dog", "selectedAllergens: " + allergensList)
                 for (j in 0..foodItemAllergenList.size - 1) {
                     for (k in 0..allergensList.size - 1) {
                         if (foodItemAllergenList.get(j).equals(allergensList.get(k), true)) {
                             foods.remove(menu.get(i).name)
-
                             Log.i("asdf132", "werew" + foods.toString())
 
                         }
