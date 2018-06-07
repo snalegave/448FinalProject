@@ -1,0 +1,89 @@
+[
+    {
+        "restaurant": "Joey Kitchen",
+        "desc": "At U-Village",
+        "address": "2603 NE 46th St, Seattle, WA 98105",
+        "phone": "2065276188",
+        "Menu": [
+            {
+                "name": "Sushi Cone",
+                "type": "appetizer",
+                "ingredients": "Soya wrapper, Sushi rice, Sriracha aioli, Tobiko, Pickled ginger, Cucumber, Tempura prawn, Avocado, Wasabi, Sesame seeds, Daikon sprouts",
+                "allergens": "eggs, gluten, fish, meat",
+                "description": "Beautiful hand rolled sushi cones filled with tempura prawns, fresh avocado, crunchy cucumber, tobiko, pickled ginger and a drizzle of sriracha aioli."
+            },
+            {
+                "name": "Japanese Gyoza",
+                "type": "appetizer",
+                "ingredients": "Pork gyoza, Garlic Chili, Sauce Hot, mustard, Green onion, Sesame seeds",
+                "allergens": "eggs, gluten, meat, dairy",
+                "description": "Pan-fired, steamed pork gyoza served on a bed of sesame soy dipping sauce and garnished with a flavourful blend of spicy mustard and vibrant green onion."
+            },
+            {
+                "name": "Nachos Grande",
+                "type": "appetizer",
+                "ingredients": "Tortilla chips, Cheddar/ Monterey Jack cheese, Refried black beans, Pulled chicken, Avocado/salsa, Pickled jalapenos Green onion/cilantro, Sliced black olives, Sour cream/yogurt mix",
+                "allergens": "eggs, meat, dairy",
+                "description": "Layered Nachos made as spicy or as mild as you like them"
+            },
+            {
+                "name": "Korean Fried Cauliflower",
+                "type": "appetizer",
+                "ingredients": "Cauliflower, Tempura batter, Korean chili paste, Sweet chili sauce, Green onion, Lime wedge, Cilantro, Sesame seeds",
+                "allergens": "eggs, gluten",
+                "description": "The Asian flavours in this dish are unique and exciting. Our product development chefs first experienced Korean miso in a Japanese restaurant with spicy tofu and very quickly fell in love with the silky miso and spicy chili. This condiment is excellent in its mild form and perfect to serve with cauliflower."
+            },
+            {
+                "name": "Mushroom Soup",
+                "type": "soup",
+                "ingredients": "Mushroom Soup, Sherry, Parsley",
+                "allergens": "dairy, gluten",
+                "description": "Wild mushrooms, fresh cream and a hint of sherry toped with fresh parsley."
+            },
+            {
+                "name": "Yellowfin Tuna Salad",
+                "type": "salad",
+                "ingredients": "Ahi Tuna, Greens mix, Napa cabbage, Mini cucumber, Carrot, Green onions, Crispy noodles, Mango, Mint leaves, Cilantro, Chili lime dressing mint, Amorosa tomato, Peanuts, Avocado, Cilantro emulsion, Cilantro oil",
+                "allergens": "gluten, fish, meat, dairy",
+                "description": "Seared rare Yellow in Ahi Tuna served in a light cilantro emulsion next to an Asian inspired salad tower."
+            },
+            {
+                "name": "House Salad Starter",
+                "type": "salad",
+                "ingredients": "Greens mix, French vinaigrette, Pickled currants,Toasted almonds, Feta cheese, Carrots, Watermelon, radish, Lemon juice",
+                "allergens": "nuts, dairy",
+                "description": "Mixed greens and fresh market vegetables in a French vinaigrette withcrumbled feta and pickled currants. Finished with freshly squeezed lemon juice."
+            },
+            {
+                "name":"Baja Fish Tacos",
+                "type":"sandwich",
+                "ingredients":"Basa, Shrimp, Onion, Corn tortillas, Cheddar cheese, Leaf, lettuce, Green goddess sauce, Guacamole, Tomatoes, Cilantro sprig",
+                "allergens":"eggs, gluten, dairy, fish",
+                "description":"Fish, Shrimp, and house made guacamole in hand pressed corn tortillas. Served with an authentic Mexican hot sauce."
+            },
+            {
+                "name":"allergen free dish",
+                "type":"dessert",
+                "ingredients":"water",
+                "allergens":"",
+                "description":"just water I guess"
+            }
+        ]
+    }, 
+    {
+        "restaurant": "restaurant 2",
+        "desc": "tbd",
+        "address": "idk yet",
+        "phone": "0000000000",
+        "Menu": [
+            {
+                "name":"pizza",
+                "type":"entree",
+                "ingredients":"pizza dough, sauce, cheese, salami",
+                "allergens":"eggs, gluten, dairy, meat",
+                "description":"generic pizza "
+            }
+        ]
+
+    }
+]

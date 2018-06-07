@@ -20,16 +20,21 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val profile = findViewById<Button>(R.id.profile)
-        val restaurantList = findViewById<Button>(R.id.profile)
+        val restaurantList = findViewById<Button>(R.id.restaurantList)
 
-        val user = FirebaseAuth.getInstance().currentUser
-        val auth = FirebaseAuth.getInstance()
+//        val user = FirebaseAuth.getInstance().currentUser
+//        val auth = FirebaseAuth.getInstance()
 
 
 
         profile.setOnClickListener {
             startActivity(Intent(this, Profile::class.java))
             Log.i("mainActivity", "pressed the profile button")
+        }
+
+        restaurantList.setOnClickListener{
+            startActivity(Intent(this, RestaurantList::class.java))
+
         }
     }
 }
