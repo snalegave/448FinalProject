@@ -19,7 +19,7 @@ class RestaurantList : AppCompatActivity() {
 
         val joey = findViewById<Button>(R.id.joeyButton)
         joey.setOnClickListener {
-            startActivity(Intent(this, FoodMenu::class.java))
+            //startActivity(Intent(this, FoodMenu::class.java))
             Log.i("mainActivity", "pressed the profile button")
         }
 

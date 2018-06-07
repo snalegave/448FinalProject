@@ -40,8 +40,19 @@ class JsonMenuData (JsonFile:String):MenuObject{
             val desc = section.getString("desc")
             val address = section.getString("address")
             val phone = section.getString("phone")
-            val items = section.getJSONArray("Menu")
+            val allergenArray = section.getJSONArray("allergens")
+            val dishTypeArray = section.getJSONArray("dishType")
+            val items = section.getJSONArray("menu")
 
+
+            val allergenList = mutableListOf<String>()
+            for (i in 0..(allergenArray.length() - 1)) {
+                allergenList.add(allergenArray[i].toString())
+            }
+            val dishTypeList= mutableListOf<String>()
+            for (i in 0..(dishTypeArray.length() - 1)) {
+                dishTypeList.add(dishTypeArray[i].toString())
+            }
             // loop that iterates over every item on the food menu
             val menu = mutableListOf<FoodItem>()
             for (j in 0..(items.length() - 1)) {
@@ -59,7 +70,7 @@ class JsonMenuData (JsonFile:String):MenuObject{
 
                 menu.add(FoodItem(foodName, type, ingredients, allergens, description))
             }
-            restaurants.add(Restaurant(name, desc, address, phone, menu))
+            restaurants.add(Restaurant(name, desc, address, phone, allergenList, dishTypeList, menu))
         }
     }
 
@@ -72,6 +83,8 @@ data class Restaurant(val name: String,
                       val desc: String,
                       val address: String,
                       val phone: String,
+                      val allergenList: List<String>,
+                      val dishTypeList: List<String>,
                       val menu: MutableList<FoodItem>) : Serializable
 
 // food item domain object

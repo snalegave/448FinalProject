@@ -4,9 +4,9 @@
         "desc": "At U-Village",
         "address": "2603 NE 46th St, Seattle, WA 98105",
         "phone": "2065276188",
-        "allergens": "nuts, eggs, gluten, fish, meat, dairy",
-        "dishType":"appetizer, soup, salad, sandwich, WokAndSautee, Steak, Entree, Dessert, Side",
-        "Menu": [
+        "allergens": ["nuts", "eggs", "gluten", "fish", "meat", "dairy"],
+        "dishType": ["appetizer", "soup", "salad", "sandwich", "WokAndSautee", "Steak", "Entree", "Dessert", "Side"],
+        "menu": [
             {
                 "name": "Sushi Cone",
                 "type": "appetizer",
@@ -204,7 +204,10 @@
         "desc": "Delivered in 30 mins or its free",
         "address": "2724 NE 45th St Ste A, Seattle, WA 98105",
         "phone": "2065259551",
-        "Menu": [
+        "allergens": ["nuts", "eggs", "gluten", "fish", "meat", "dairy", "soy"],
+        "dishType": ["appetizer", "soup", "salad", "sandwich", "WokAndSautee", "Steak", "Entree", "Dessert", "Side"],
+
+        "menu": [
             {
                 "name": "BUFFALO CHICKEN Pizza",
                 "type": "Pizza",
@@ -259,7 +262,7 @@
                 "name": "BARBEQUE CHICKEN WINGS",
                 "type": "Sides",
                 "ingredients": "Chicken Wings [Chicken Wing Sections, Water, Seasoning [Modified Food Starch, Rice Flour, Potato Dextrin, Salt, Leavening (Sodium Acid Pyrophosphate, Sodium Bicarbonate), Xanthan Gum], Seasoning [Maltodextrin, Dextrose, Modified Corn Starch, Modified Food Starch, Tapioca Maltodextrin, Modified Tapioca Starch, Salt, Caramel Color, Yellow Corn Flour, Oleoresin Turmeric, Grill Flavor (from Sunflower Oil), Natural Smoke Flavor, Autolyzed Yeast Extract, Oleoresin Paprika, Sodium Alginate, Natural Flavoring, Natural Flavor, Spice Extractive], Salt, Sodium Phosphates. Coated With: Modified Corn Starch, Rice Flour, Corn Syrup Solids, Dextrose, Sodium Alginate. Blanched in Vegetable Oil], Brown Barbeque Sauce [Water, High Fructose Corn Syrup, Tomato Paste, Molasses, Vinegar, Seasoning [Salt, Spices, Natural Flavors, Garlic Powder, Onion Powder, Lemon Juice (Corn Syrup Solids, Lemon Juice Solids, Lemon Oil), Turmeric], Modified Corn Starch, Caramel Color, Natural Flavors (Including Smoke Flavor), Xanthan Gum, Sodium Benzoate (Preservative)], Red Barbeque Sauce [Distilled Vinegar, Water, Tomato Paste, High Fructose Corn Syrup, Corn Syrup Solids, Salt, Molasses, Spices, Onion Powder, Garlic Powder, Sodium Benzoate (0.1% as preservative), Sugar, Mustard Bran, Caramel Color].",
-                "allergens": "",
+                "allergens": "soy",
                 "description": "Delicious wings"
             },
             {

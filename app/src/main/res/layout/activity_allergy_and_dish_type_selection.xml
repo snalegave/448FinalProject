@@ -8,11 +8,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AllergyAndDishTypeSelection"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
 
 
 
@@ -21,14 +24,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
             android:text="Please select your allergies and what dishes you would like to view:"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        <TextView
+            android:id="@+id/choosingDietText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:text="Are you on a specific diet?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <com.google.android.flexbox.FlexboxLayout
+            android:id= "@+id/dietCheckList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:alignItems="stretch"
+            app:alignContent="stretch"
+            android:orientation="horizontal">
+        </com.google.android.flexbox.FlexboxLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:id="@+id/choosingAllergensText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
             android:text="What food items are you allergic to?"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
         <com.google.android.flexbox.FlexboxLayout
@@ -115,6 +144,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
             android:text="What dish type would you like to see?"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
         <com.google.android.flexbox.FlexboxLayout
@@ -205,6 +236,7 @@
             android:id="@+id/submitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#ffffff"
             android:text="Submit" />
 
     </LinearLayout>

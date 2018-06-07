@@ -15,16 +15,19 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_allergy_and_dish_type_selection)
 
+
+        val bundle: Bundle = intent.getBundleExtra("restaurant")
+        val restaurant = bundle.getSerializable("restaurant") as Restaurant
+
         val submitButton = findViewById(R.id.submitButton) as Button
+        
 
         val allergenChecklist = findViewById(R.id.allergensCheckList) as FlexboxLayout
 
         val allergenCheckBox: CheckBox
-        val allergenList = arrayListOf<String>()
+        val allergenList = restaurant.allergenList
 
-        allergenList.add("Milk")
-        allergenList.add("Egg")
-        allergenList.add("Fish")
+
 
         //Array Containg all of the checkBoxs for allergens
         val arrayOfAllergenCheckBox = arrayListOf<CheckBox>()
@@ -53,21 +56,19 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
 
         val dishTypeChecklist = findViewById(R.id.dishTypeCheckList) as FlexboxLayout
         val dishTypeCheckBox: CheckBox
-        val dishTypeList = arrayListOf<String>()
+        val dishTypeList = restaurant.dishTypeList
 
-        dishTypeList.add("Entree")
-        dishTypeList.add("Salad")
-        dishTypeList.add("Dessert")
+
 
         //Array Containing all of the checkBoxs for dishTypes
         val arrayOfDishTypeCheckBox = arrayListOf<CheckBox>()
         //Array Containing selected dishTypes
         val selectedDishType = arrayListOf<String>()
-        for (i in 0 until allergenList.size) {
+        for (i in 0 until dishTypeList.size) {
             var dishTypeCheckBox = CheckBox(this)
             dishTypeCheckBox.setId(i)
-            dishTypeCheckBox.setText(allergenList.get(i))
-            dishTypeCheckBox.setTag(allergenList.get(i))
+            dishTypeCheckBox.setText(dishTypeList.get(i))
+            dishTypeCheckBox.setTag(dishTypeList.get(i))
             dishTypeCheckBox.setOnCheckedChangeListener(object : CompoundButton.OnCheckedChangeListener {
                 override fun onCheckedChanged(compoundButton: CompoundButton, b: Boolean) {
                     //If the checkbox is selected, add dish type to selected dish type List
@@ -84,16 +85,65 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
         }
 
 
-        submitButton.setOnClickListener {
-            val intent = Intent(this, FoodMenu::class.java)
 
-            intent.putExtra("selectedAllergen", selectedAllergen)
-            intent.putExtra("selectedDishType", selectedDishType)
+        val dietChecklist = findViewById(R.id.dietCheckList) as FlexboxLayout
+
+        val dietCheckBox: CheckBox
+        val dietList = arrayListOf<String>()
+
+        dietList.add("Fodmod")
+
+        //Array Containg all of the checkBoxs for Diets
+        val arrayOfDietCheckBox = arrayListOf<CheckBox>()
+        //Array Containg selected Diets
+        val selectedDiet = arrayListOf<String>()
+        for (i in 0 until dietList.size) {
+            var dietCheckBox = CheckBox(this)
+            dietCheckBox.setId(i)
+            dietCheckBox.setText(dietList.get(i))
+            dietCheckBox.setTag(dietList.get(i))
+            dietCheckBox.setOnCheckedChangeListener(object : CompoundButton.OnCheckedChangeListener {
+                override fun onCheckedChanged(compoundButton: CompoundButton, b: Boolean) {
+                    //If the checkbox is selected, add Diet to selected Diet List
+                    if (b) {
+                        selectedDiet.add(compoundButton.getText().toString())
+                    } else {
+                        //If the checkbox is not selected, remove Diet from selected Diet List
+                        selectedDiet.remove(compoundButton.getText().toString())
+                    }
+                }
+            })
+            arrayOfDietCheckBox.add(dietCheckBox)
+            dietChecklist.addView(dietCheckBox)
+        }
+
+
+
+        submitButton.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putSerializable("restaurant", restaurant)
+
+            val intent = Intent(this, FoodMenu::class.java).apply {
+                putExtra("selectedAllergen", selectedAllergen)
+                putExtra("selectedDishType", selectedDishType)
+                putExtra("selectedDiet", selectedDiet)
+                putExtra("restaurant",bundle)
+            }
             startActivity(intent)
 
         }
+
     }
+
+
+
 }
+
+
+
+
+
+
 
 
         //        val milkCheckBox = findViewById(R.id.milkCheckBox) as CheckBox
