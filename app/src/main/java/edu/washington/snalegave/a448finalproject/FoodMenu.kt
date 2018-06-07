@@ -66,26 +66,32 @@ class FoodMenu : AppCompatActivity() {
         }
 
 
-            Log.i("dog", "after:" + foods.size.toString())
 
-
-            val listView = findViewById<ListView>(R.id.ListView)
-            val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_2, android.R.id.text1, foods)
-            listView.adapter = adapter
-            listView.setOnItemClickListener { parent, v, position, id ->
-                val intent = Intent(this, AboutActivity::class.java)
-                val bundle: Bundle = Bundle()
-                bundle.putSerializable("name", menu[position])
-                intent.putExtras(bundle)
-                startActivity(intent)
-            }
-
-            val filter = findViewById<Button>(R.id.filterButton)
-            filter.setOnClickListener {
-                startActivity(Intent(this, AllergyAndDishTypeSelection::class.java))
-                Log.i("mainActivity", "pressed the profile button")
-            }
-
+        val listView = findViewById<ListView>(R.id.ListView)
+        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_2, android.R.id.text1, foods)
+        listView.adapter = adapter
+        listView.setOnItemClickListener { parent, v, position, id ->
+            val intent = Intent(this, AboutActivity::class.java)
+            val bundle: Bundle = Bundle()
+            bundle.putSerializable("name", menu[position])
+            intent.putExtras(bundle)
+            startActivity(intent)
         }
+
+        val filter = findViewById<Button>(R.id.filterButton)
+        filter.setOnClickListener {
+
+            val intent = Intent(this, AllergyAndDishTypeSelection::class.java)
+            val bundle = Bundle()
+            bundle.putSerializable("restaurant", restaurant)
+            intent.putExtras(bundle)
+
+            Log.i("foodmenu", restaurant.toString())
+
+            Log.i("mainActivity", "pressed the filter button")
+            startActivity(intent)
+        }
+
     }
+}
 
