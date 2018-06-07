@@ -1,6 +1,7 @@
 package edu.washington.snalegave.a448finalproject
 
 import android.content.Intent
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -18,13 +19,20 @@ class restaurauntInfo : AppCompatActivity() {
 
         val name = findViewById<TextView>(R.id.name)
         val desc = findViewById<TextView>(R.id.desc)
-        val phone = findViewById<TextView>(R.id.phone)
+        val phone = findViewById<TextView>(R.id.call)
         val address = findViewById<TextView>(R.id.address)
 
         name.setText(rest.name)
         desc.setText("Description: " + rest.desc.toUpperCase())
-        phone.setText("Phone Number: " + rest.phone)
         address.setText("Address: " + rest.address)
+        phone.setText(rest.phone)
 
+        val number = "tel:"+rest.phone
+
+        phone.setOnClickListener() {
+            val intent = Intent(Intent.ACTION_DIAL)
+            intent.data = Uri.parse(number)
+            startActivity(intent)
+        }
     }
 }
