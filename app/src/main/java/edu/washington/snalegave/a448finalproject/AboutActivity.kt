@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_about.*
 
 class AboutActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +50,9 @@ class AboutActivity: AppCompatActivity() {
         allergens.setText(stringAllergens)
         desc.setText("Description of Dish: " + fooditem.desc)
 
+        val reactionButton = findViewById<Button>(R.id.allergyAlert)
+        allergyAlert.setOnClickListener{
 
-
+        }
     }
 }

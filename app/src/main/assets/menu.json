@@ -205,7 +205,7 @@
         "address": "2724 NE 45th St Ste A, Seattle, WA 98105",
         "phone": "2065259551",
         "allergens": ["nuts", "eggs", "gluten", "fish", "meat", "dairy", "soy"],
-        "dishType": ["appetizer", "soup", "salad", "sandwich", "WokAndSautee", "Steak", "Entree", "Dessert", "Side"],
+        "dishType": ["pizza", "entree", "sides", "dessert", "salad", "sandwich"],
 
         "menu": [
             {
@@ -267,7 +267,7 @@
             },
             {
                 "name": "GARLIC BREAD TWISTS",
-                "type": "sides",
+                "type": "Sides",
                 "ingredients": "Pan Dough [Enriched Flour (Wheat Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Palm Oil With Natural Butter Flavor and Soy Lecithin, Soybean Oil, Sugar, Salt, Whey, Maltodextrin, Dextrose, Dough Conditioners (Sodium Stearoyl, Lactylate, Enzyme, Calcium Sulfate, Ascorbic Acid, Calcium Phosphate, L-Cysteine), Yeast], Garlic Oil Blend [Butter Flavored Oil (Liquid and Hydrogenated Soybean Oil, Palm Oil, Salt, Natural Flavors (contain Canola Oil and Lipolyzed Butter Oil), Sunflower and Soy Lecithin, Lactic Acid, Colored with Turmeric and Beta Carotene, Artificial Flavor, TBHQ and Citric acid (protect flavor), Vitamin A Palmitate, Autolyzed Yeast Extract, Beta Carotene (color)), Dehydrated Garlic, Parmesan Cheese (part-skim milk, cheese cultures, salt, enzymes), Salt, Dehydrated Parsley, Spice, Annatto Extract (color), Natural Flavor, Citric Acid, Lactic Acid, Oleoresin Rosemary].",
                 "allergens": "Milk, Soy, Wheat",
                 "description": "Delicious Bread Twists"
