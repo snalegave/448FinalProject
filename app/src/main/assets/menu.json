@@ -333,7 +333,8 @@
       "appetizers",
       "sandwiches",
       "specialties",
-      "salads"
+      "salads",
+        "steak"
     ],
     "menu": [
       {
@@ -361,6 +362,34 @@
             "ingredients": "cuban bread, ham, roasted pork, swiss cheese, pickles, mustard, salami",
             "allergens": "milk, eggs, gluten, soy",
             "description": "Slow Roasted Pork, Ham, Swiss Cheese, Pickles, Mustard and Mayonnaise on a Grilled and Pressed Cuban-Style Roll"
+        },
+        {
+            "name": "California Cheesesteak",
+            "type": "sandwiches",
+            "ingredients": "Steak, Mushroom, Onions, peppers, cheese, toasted Roll",
+            "allergens": "milk, gluten",
+            "description": "Thinly Sliced Grilled Steak Covered with Sauteed Mushrooms, Onions, Peppers and Cheese on a Toasted Roll"
+        },
+        {
+            "name": "Grilled Cheese",
+            "type": "sandwiches",
+            "ingredients": "milk, egg, bread, cheese",
+            "allergens": "milk, egg, gluten, soy",
+            "description": "Served on Egg Bread with Your Choice of Cheese"
+        },
+        {
+            "name": "Seared Tuna Tataki Salad",
+            "type": "salad",
+            "ingredients": "Ahi tuna, Avocado, Tomato, mixed greens, wasabi vinegrette",
+            "allergens": "fish, gluten, soy",
+            "description": "Fresh Ahi Lightly Seared and Served Rare with Avocado, Tomato and Mixed Greens Tossed with Wasabi Vinaigrette"
+        },
+        {
+            "name": "Herb-crusted Salmon Salad",
+            "type": "salad",
+            "ingredients": "Salmon, lettuce, tomato, vegetables, Balsamic Vinaigrette",
+            "allergens": "Fish, Gluten, Soy",
+            "description": "Our Wonderful Fresh Herb-Crusted Salmon Served Chilled on Top of Baby Lettuces, Tomato and Vegetables. Tossed in Our Balsamic Vinaigrette"
         }
     ]
   }
