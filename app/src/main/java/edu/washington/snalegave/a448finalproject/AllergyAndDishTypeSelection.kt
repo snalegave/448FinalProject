@@ -15,9 +15,8 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_allergy_and_dish_type_selection)
 
-        val bundle: Bundle = intent.getBundleExtra("restaurant")
-        Log.i("filter", bundle.toString())
 
+        val bundle: Bundle = intent.getBundleExtra("restaurant")
         val restaurant = bundle.getSerializable("restaurant") as Restaurant
 
         val submitButton = findViewById(R.id.submitButton) as Button
@@ -86,13 +85,14 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
 
 
         submitButton.setOnClickListener {
-            val intent = Intent(this, FoodMenu::class.java)
-
-            intent.putExtra("selectedAllergen", selectedAllergen)
-            intent.putExtra("selectedDishType", selectedDishType)
             val bundle = Bundle()
             bundle.putSerializable("restaurant", restaurant)
-            intent.putExtras(bundle)
+
+            val intent = Intent(this, FoodMenu::class.java).apply {
+                putExtra("selectedAllergen", selectedAllergen)
+                putExtra("selectedDishType", selectedDishType)
+                putExtra("restaurant",bundle)
+            }
             startActivity(intent)
 
         }

@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         val profile = findViewById<Button>(R.id.profile)
         val restaurantList = findViewById<Button>(R.id.restaurantList)
 
-        val user = FirebaseAuth.getInstance().currentUser
-        val auth = FirebaseAuth.getInstance()
+//        val user = FirebaseAuth.getInstance().currentUser
+//        val auth = FirebaseAuth.getInstance()
 
 
 

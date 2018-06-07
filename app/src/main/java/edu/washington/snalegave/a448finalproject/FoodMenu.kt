@@ -87,12 +87,13 @@ class FoodMenu : AppCompatActivity() {
         val filter = findViewById<Button>(R.id.filterButton)
         filter.setOnClickListener {
 
-            val intent = Intent(this, AllergyAndDishTypeSelection::class.java)
             val bundle = Bundle()
             bundle.putSerializable("restaurant", restaurant)
-            intent.putExtras(bundle)
+            val intent = Intent(this, AllergyAndDishTypeSelection::class.java).apply{
+                putExtra("restaurant", bundle)
+            }
 
-            Log.i("foodmenu", restaurant.toString())
+            Log.i("foodMenu", restaurant.toString())
 
             Log.i("mainActivity", "pressed the filter button")
             startActivity(intent)
