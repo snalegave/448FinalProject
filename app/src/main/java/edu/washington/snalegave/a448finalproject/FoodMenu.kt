@@ -37,25 +37,10 @@ class FoodMenu : AppCompatActivity() {
         Log.i("fod1", foods.toString())
 
         val intent: Intent = getIntent()
-        if (intent.hasExtra("selectedAllergen")) {
-            var FodDietIngredients: MutableSet<String> = hashSetOf("Onions", "Garlic", "Cabbage", "Broccoli",
-                    "Cauliflower", "Snow peas", "Asparagus", "Artichokes", "Leeks", "Beetroot", "Celery", "Sweet corn",
-                    "Brussels sprouts", "Mushrooms", "Peaches", "Apricots", "Nectarines", "Plums", "Prunes",
-                    "Mangoes", "Apples", "Pears", "Watermelon", "Cherries", "Blackberries",
-                    "Beans", "lentils", "Wheat", "rye", "Breads", "Cereals", "Pastas", "Crackers", "Pizza", "Milk",
-                    "Soft cheese", "Yogurt", "Ice cream", "Custard", "Pudding", "Cottage cheese")
+        if (intent.hasExtra("selectedAllergen") &&!intent.getStringArrayListExtra("selectedAllergen").isEmpty()) {
             var allergensList: ArrayList<String> = intent.getStringArrayListExtra("selectedAllergen")
             for (i in 0..(menu.size - 1)) {
                 var foodItemAllergenList: List<String> = menu.get(i).allergens
-                var ingredientList: List<String> = menu.get(i).ingredients
-                for(h in 0..(ingredientList.size - 1)) {
-                    for(s in FodDietIngredients) {
-                        if(s.equals(ingredientList.get(h), ignoreCase = true)) {
-                            foods.remove(menu.get(i).name)
-
-                        }
-                    }
-                }
                 Log.i("dog", "allergens: " + menu.get(i).allergens.toString())
                 Log.i("dog", "selectedAllergens: " + allergensList)
                 for (j in 0..foodItemAllergenList.size - 1) {
@@ -70,6 +55,41 @@ class FoodMenu : AppCompatActivity() {
                 }
             }
         }
+        if(intent.hasExtra("selectedDiet") && !intent.getStringArrayListExtra("selectedDiet").isEmpty()) {
+            var FodDietIngredients: MutableSet<String> = hashSetOf("Onions", "Garlic", "Cabbage", "Broccoli",
+                    "Cauliflower", "Snow peas", "Asparagus", "Artichokes", "Leeks", "Beetroot", "Celery", "Sweet corn",
+                    "Brussels sprouts", "Mushrooms", "Peaches", "Apricots", "Nectarines", "Plums", "Prunes",
+                    "Mangoes", "Apples", "Pears", "Watermelon", "Cherries", "Blackberries",
+                    "Beans", "lentils", "Wheat", "rye", "Breads", "Cereals", "Pastas", "Crackers", "Pizza", "Milk",
+                    "Soft cheese", "Yogurt", "Ice cream", "Custard", "Pudding", "Cottage cheese")
+            for (i in 0..(menu.size - 1)) {
+                var ingredientList: List<String> = menu.get(i).ingredients
+                for (h in 0..(ingredientList.size - 1)) {
+                    for (s in FodDietIngredients) {
+                        if (s.equals(ingredientList.get(h), ignoreCase = true)) {
+                            foods.remove(menu.get(i).name)
+                            Log.i("u2", menu.get(i).name)
+                        }
+                    }
+                }
+            }
+        }
+        if (intent.hasExtra("selectedDishType") &&!intent.getStringArrayListExtra("selectedDishType").isEmpty()) {
+            var selectedDishList: ArrayList<String> = intent.getStringArrayListExtra("selectedDishType")
+            var lowerCaseDish :ArrayList<String> = arrayListOf()
+            for(s in selectedDishList) {
+                lowerCaseDish.add(s.toLowerCase())
+            }
+            for (i in 0..(menu.size - 1)) {
+                var foodItemType: String = menu.get(i).type
+                Log.i("dog", "selectedAllergens: " + selectedDishList)
+                if (!lowerCaseDish.contains(foodItemType)) {
+                            foods.remove(menu.get(i).name)
+                            Log.i("asdf132", "werew" + foods.toString())
+                }
+            }
+        }
+
 
 
 
