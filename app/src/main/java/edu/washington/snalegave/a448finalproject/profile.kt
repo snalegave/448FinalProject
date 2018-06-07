@@ -84,7 +84,7 @@ class Profile : AppCompatActivity() {
             var createString: String = ""
             for(i in sorted.keys){
                 if (sorted[i]!!>4){
-                    createString += i + ": " + sorted[i] + "\n"
+                    createString = i + ": " + sorted[i] + "\n" + createString
                     flag = true
                 }
             }
