@@ -26,5 +26,7 @@ class restaurauntInfo : AppCompatActivity() {
         phone.setText("Phone Number: " + rest.phone)
         address.setText("Address: " + rest.address)
 
+
+
     }
 }
