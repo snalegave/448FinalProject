@@ -288,71 +288,71 @@
         "type": "steak",
         "ingredients": "5 oz Sirloin Steak, Ponzu sauce, Garlic chili sauce, Salmon Sushi rice, Umami mayo, Crispy tempura bits, Lime, Shaved serrano peppers",
         "allergens": "",
-        "description": ""
+        "description": "Tataki style sirloin served with our Osaka style pressed salmon sushi."
       },
 
       {
         "name": "Balsamic Braised Beef Short Ribs",
         "type": "entree",
         "ingredients": "Braised Short Rib, Jus, Mashed potatoes, Asparagus, Grape tomatoes, Pickled shimeji mushrooms, Shallots, Rosemary salt",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, egg, gluten",
+        "description": "The short ribs in this dish are slow braised and fork tender. Served with mashed potatoes, asparagus and a rich jus, this dish is the epitome of comfort food."
       },
       {
         "name": "Rotisserie Chicken Entree",
         "type": "entree",
         "ingredients": "Rotisserie chicken, Mashed potatoes, Rotisserie vegetables, Lemon juice, S&P, Parsley, Sundried tomato gravy, Parsley sprig",
         "allergens": "",
-        "description": ""
+        "description": "Delicious chicken"
       },
       {
         "name": "Herb Crush Salmon",
         "type": "entree",
         "ingredients": "Salmon fillet, Grainy mustard and maple butter, Herb rub, Cooked quinoa, Roasted cauliflower, Snap peas, Corn, Red Pepper, Grape tomatoes, Lemon juice, Shaved fennel, Lemon olive oil dressing",
         "allergens": "",
-        "description": ""
+        "description": "New to our test kitchen, a modern twist on our classic Herb Crush Salmon served with roasted cauliflower and red and white quinoa topped with a maple and grainy mustard butter and fennel salad."
       },
       {
         "name": "Bistro Plate",
         "type": "entree",
         "ingredients": "Rotisserie chicken, French fries, Coleslaw, Sundried tomato gravy",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, egg, gluten",
+        "description": "Slow roasted rotisserie chicken accompanied by signature fries, coleslaw and sundried tomatov gravy. "
       },
       {
         "name": "Japanese Salad and Pressed Sushi",
         "type": "entree",
         "ingredients": "Pressed salmon sushi, Teriyaki reduction, Umami sauce, Lime wedge, Black pepper, Tempura bits, Serrano peppers, Pickled ginger, Katsu salad portion, Arugula, Peanuts, Red onion, Cilantro, Carrot & miso dressing, Serrano peppers, Sesame seeds, B & W, Carrot & miso dressing, Fried yam, Amorosa tomato",
-        "allergens": "",
-        "description": ""
+        "allergens": "fish",
+        "description": "Delicious salad and sushi"
       },
       {
         "name": "Chef's Daily Rotisserie",
         "type": "entree",
         "ingredients": "Hourly roasted rotisserie chicken, Mashed potatoes, Cauliflower, Snap peas, Red pepper, Grilled corn, selection of sauces",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, egg, gluten, nuts, fish",
+        "description": "Our rotating feature chicken program allows us to offer our signature spit roasted chicken that has been brined for 24 hours to ensure moistness by combining it with carefully selected global flavors."
       },
       {
         "name": "Individually Baked Apple Pie",
         "type": "dessert",
         "ingredients": "Puff pastry, Roasted apples, Cinnamon, Rolled oats, Almonds, Brown sugar, Icing sugar, Caramel Sauce, Ice cream",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, egg, gluten, nuts",
+        "description": "Baked to order, hand-folded apple pie drizzled with caramel sauce and topped with your choice of maple or vanilla ice cream"
       },
       {
         "name": "Molten Chocolate Cake",
         "type": "dessert",
         "ingredients": "Soufflé, Vanilla ice cream, Raspberries, Raspberry puree",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, egg, gluten",
+        "description": "Chocolate Soufflé with a decadent molten lava center. Served with vanilla ice cream, fresh raspberries, and raspberry puree."
       },
       {
         "name": "Raspberry Butterscotch Mousse",
         "type": "dessert",
         "ingredients": "Butterscotch budino, Sponge toffee crush, Salted caramel sauce, Vanilla whipped cream, Raspberry purée, Raspberries",
-        "allergens": "",
-        "description": ""
+        "allergens": "milk, eggs",
+        "description": "An Italian classic with a JOEY twist, this melt in your mouth budino, or pudding, is layered with ‘crunchie’ bar filling, softly whipped and gently sweetened cream, fresh and tart raspberries and warm, sweet salted caramel. "
       },
       {
         "name": "Garlic Bread",
