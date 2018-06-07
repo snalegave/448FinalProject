@@ -123,7 +123,7 @@ class AboutActivity: AppCompatActivity() {
                 newChildRef.setValue(fooditem.name)
                 for(i in fooditem.ingredients){
                     val newIngredientRef = refForIngredients.push()
-                    newIngredientRef.setValue(i)
+                    newIngredientRef.setValue(i.toLowerCase())
                 }
             } else{
                 Toast.makeText(this, "This food item has been noted.", Toast.LENGTH_SHORT).show()

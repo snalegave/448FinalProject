@@ -57,8 +57,8 @@ class Profile : AppCompatActivity() {
                     for (child: DataSnapshot in dataSnapshot.children) {
                         val item = child.getValue().toString().toLowerCase()
                         if (ingredientsFreq.containsKey(item)){
-                            var freq = ingredientsFreq[item]!!
-                            ingredientsFreq.set(item, freq++ )
+                            var freq = ingredientsFreq[item]!! + 1
+                            ingredientsFreq.set(item, freq)
                         } else {
                             ingredientsFreq.set(item, 1)
                         }
@@ -81,12 +81,14 @@ class Profile : AppCompatActivity() {
         generateFreq.setOnClickListener{
             val sorted = ingredientsFreq.toList().sortedBy { (_, value) -> value}.toMap()
             var flag = false
+            var createString: String = ""
             for(i in sorted.keys){
-                if (sorted[i]!!>1){
-                    frequency.text = i + ": " + sorted[i]
+                if (sorted[i]!!>4){
+                    createString += i + ": " + sorted[i] + "\n"
                     flag = true
                 }
             }
+            frequency.text= createString
             if (flag == false){
             frequency.text= "We need more data to determine if you have any allergies"
         }
