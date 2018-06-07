@@ -65,7 +65,7 @@
 
         <TextView
             android:id="@+id/desc"
-            android:layout_width="wrap_content"
+            android:layout_width="332dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="TextView"

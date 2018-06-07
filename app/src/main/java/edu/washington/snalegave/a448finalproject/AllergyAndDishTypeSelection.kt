@@ -1,6 +1,7 @@
 package edu.washington.snalegave.a448finalproject
 
 import android.content.Intent
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -38,6 +39,7 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
             allergenCheckBox.setId(i)
             allergenCheckBox.setText(allergenList.get(i))
             allergenCheckBox.setTag(allergenList.get(i))
+            allergenCheckBox.setTextColor(Color.BLACK)
             allergenCheckBox.setOnCheckedChangeListener(object : CompoundButton.OnCheckedChangeListener {
                 override fun onCheckedChanged(compoundButton: CompoundButton, b: Boolean) {
                     //If the checkbox is selected, add Allergen to selected allergen List
@@ -69,6 +71,7 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
             dishTypeCheckBox.setId(i)
             dishTypeCheckBox.setText(dishTypeList.get(i))
             dishTypeCheckBox.setTag(dishTypeList.get(i))
+            dishTypeCheckBox.setTextColor(Color.BLACK)
             dishTypeCheckBox.setOnCheckedChangeListener(object : CompoundButton.OnCheckedChangeListener {
                 override fun onCheckedChanged(compoundButton: CompoundButton, b: Boolean) {
                     //If the checkbox is selected, add dish type to selected dish type List
@@ -102,6 +105,7 @@ class AllergyAndDishTypeSelection : AppCompatActivity() {
             dietCheckBox.setId(i)
             dietCheckBox.setText(dietList.get(i))
             dietCheckBox.setTag(dietList.get(i))
+            dietCheckBox.setTextColor(Color.BLACK)
             dietCheckBox.setOnCheckedChangeListener(object : CompoundButton.OnCheckedChangeListener {
                 override fun onCheckedChanged(compoundButton: CompoundButton, b: Boolean) {
                     //If the checkbox is selected, add Diet to selected Diet List

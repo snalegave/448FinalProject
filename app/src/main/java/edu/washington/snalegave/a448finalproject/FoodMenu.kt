@@ -99,6 +99,15 @@ class FoodMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+        val info = findViewById<Button>(R.id.about)
+        info.setOnClickListener {
+            val intent = Intent(this, restaurauntInfo::class.java)
+            val bundle: Bundle = Bundle()
+            bundle.putSerializable("restInfo", restaurant)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        }
     }
 }
 
