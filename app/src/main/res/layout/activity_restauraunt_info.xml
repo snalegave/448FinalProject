@@ -55,7 +55,7 @@
         android:background="#07000000"
         android:text="desc"
         android:textColor="#ffffff"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/phone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />

@@ -16,12 +16,12 @@ class RestaurantList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_restaurant_list)
-
+/*
         val joey = findViewById<Button>(R.id.joeyButton)
         joey.setOnClickListener {
             //startActivity(Intent(this, FoodMenu::class.java))
             Log.i("mainActivity", "pressed the profile button")
-        }
+        }*/
 
         app = application as MenuData
         restaurantList = app.getRestaurants()
