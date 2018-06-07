@@ -7,6 +7,18 @@
     android:background="@drawable/dashboard"
     tools:context=".profile">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_top" />
+
     <TextView
         android:id="@+id/displayEmail"
         android:layout_width="wrap_content"
@@ -18,7 +30,7 @@
         android:textColor="#ffffff"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/logOutButton"
@@ -28,10 +40,12 @@
         android:layout_marginTop="68dp"
         android:background="#ffffff"
         android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toEndOf="@+id/displayEmail"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207" />
 
     <TextView
         android:id="@+id/guess"

@@ -1,7 +1,7 @@
 [
     {
         "restaurant": "Joey Kitchen",
-        "desc": "At U-Village",
+        "desc": "Seattles only outdoor lifestyle shopping center, offering a unique mix of locally-owned boutiques, signature national retailers, and a distinct collection of restaurants and eateries.",
         "address": "2603 NE 46th St, Seattle, WA 98105",
         "phone": "2065276188",
         "allergens": ["nuts", "eggs", "gluten", "fish", "meat", "dairy"],
@@ -200,8 +200,8 @@
         ]
     },
     {
-        "restaurant": "dominos",
-        "desc": "Delivered in 30 mins or its free",
+        "restaurant": "DOMINOS",
+        "desc": "Dominos Pizza, Inc, now branded simply as Domino's, is an American pizza restaurant chain founded in 1960",
         "address": "2724 NE 45th St Ste A, Seattle, WA 98105",
         "phone": "2065259551",
         "allergens": ["nuts", "eggs", "gluten", "fish", "meat", "dairy", "soy"],
@@ -313,21 +313,55 @@
                 "ingredients": "",
                 "allergens": "",
                 "description": ""
-            },
-            {
-                "name": "",
-                "type": "",
-                "ingredients": "",
-                "allergens": "",
-                "description": ""
-            },
-            {
-                "name": "",
-                "type": "",
-                "ingredients": "",
-                "allergens": "",
-                "description": ""
             }
         ]
-    }
+    },
+  {
+    "restaurant": "The Cheesecake Factory",
+    "desc": "The Cheesecake Factory. The Cheesecake Factory, Inc. is a restaurant company and distributor of cheesecakes based in the United States. The company operates 210 full-service restaurants: 194 under The Cheesecake Factory brand, 14 under the Grand Lux Cafe brand and 2 under the RockSugar Pan Asian Kitchen brand.",
+    "address": "Bellevue Square 401 Bellevue Square Bellevue, WA 98004 US",
+    "phone": "425-450-6000",
+    "allergens": [
+      "milk",
+      "eggs",
+      "peanut",
+      "fish",
+      "gluten",
+      "soy"
+    ],
+    "dishType": [
+      "appetizers",
+      "sandwiches",
+      "specialties",
+      "salads"
+    ],
+    "menu": [
+      {
+        "name": "Caesar Salad with Chicken",
+        "type": "salads",
+        "ingredients": "garlic, olive oil, lemon, kosher salt, romaine lettuce, chicken, parmesan cheese, anchovy",
+        "allergens": "milk, eggs, fish, gluten, soy",
+        "description": "The Almost Traditional Recipe with Croutons, Parmesan Cheese and Our Special Caesar Dressing"
+      },
+      {
+        "name": "Factory Nachos",
+        "type": "appetizers",
+        "ingredients": "olive oil, garlic, small onions, teaspoon salt, butter, milk, sour cream, pimento, hot pepper sauces",
+        "allergens": "milk, eggs, gluten, soy, fish",
+        "description": "Crisp Tortilla Chips Covered with Melted Cheeses, Guacamole, Sour Cream and Salsa"
+      }, {
+            "name": "Crispy Crab Wontons",
+            "type": "appetizers",
+            "ingredients": "olive oil, garlic, ginger, wheat flour, onion, oyster sauce, sesame oil, crab",
+            "allergens": "milk, eggs, gluten, soy, fish",
+            "description": "Crabmeat Blended with Cream Cheese, Green Onion, Water Chestnuts and Sweet Chili Sauce Fried Crisp in Wonton Wrappers"
+        },{
+            "name": "Cuban Sandwich",
+            "type": "sandwiches",
+            "ingredients": "cuban bread, ham, roasted pork, swiss cheese, pickles, mustard, salami",
+            "allergens": "milk, eggs, gluten, soy",
+            "description": "Slow Roasted Pork, Ham, Swiss Cheese, Pickles, Mustard and Mayonnaise on a Grilled and Pressed Cuban-Style Roll"
+        }
+    ]
+  }
 ]

@@ -25,7 +25,7 @@
         android:id="@+id/address"
         android:layout_width="297dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="48dp"
         android:background="#07000000"
         android:text="address"
         android:textColor="#ffffff"
@@ -36,11 +36,11 @@
 
     <TextView
         android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="39dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
         android:background="#07000000"
-        android:text="phone"
+        android:text="Phone Number:"
         android:textColor="#ffffff"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/address"
@@ -49,15 +49,32 @@
 
     <TextView
         android:id="@+id/desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="329dp"
+        android:layout_height="174dp"
         android:layout_marginStart="24dp"
         android:background="#07000000"
         android:text="desc"
         android:textColor="#ffffff"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/call"
+        android:layout_width="157dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="48dp"
+        android:background="#07000000"
+        android:text="TextView"
+        android:textColor="#0000ff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintVertical_bias="0.153" />
 
 </android.support.constraint.ConstraintLayout>
