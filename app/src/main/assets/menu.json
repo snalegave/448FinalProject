@@ -1,5 +1,5 @@
 [
-  {
+   {
     "restaurant": "Joey Kitchen",
     "desc": "Seattles only outdoor lifestyle shopping center, offering a unique mix of locally-owned boutiques, signature national retailers, and a distinct collection of restaurants and eateries.",
     "address": "2603 NE 46th St, Seattle, WA 98105",
@@ -17,7 +17,7 @@
       "soup",
       "salad",
       "sandwich",
-      "WokAndSautee",
+      "Wok And Sautee",
       "Steak",
       "Entree",
       "Dessert",
@@ -200,142 +200,272 @@
         "description": "Hearty comfort food with elegance. Lobster and crab packed ravioli, served in a smooth white wine cream sauce, topped off with beautiful juicy shrimp, and garnished with our fresh dill and micro greens."
       },
       {
-        "name": "allergen free dish",
+        "name": "BBQ Salmon Rice Bowl",
+        "type": "wok and sautee",
+        "ingredients": "Salmon fillet, White onion, Red pepper, Green pepper, Snap peas, Carrot, Button mushrooms, Edamame beans, Sweet sesame soy sauce, White or Brown rice, Daikon/Sesame seeds, Daikon sprouts",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Chicken Chinatown Lettuce Wraps",
+        "type": "wok and sautee",
+        "ingredients": "Chicken, Red pepper, Carrot, Green onion, Hoisin glaze, Fried farkay noodles, Peanuts, Cilantro, Black and white sesame seeds, Baby ice berg lettuce cups, Soy chili sauce",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Shrimp Lettuce Wraps",
+        "type": "wok and sautee",
+        "ingredients": "Shrimp, Red pepper, Mushrooms, Carrot, Red onion, Green onion, Nappa cabbage, Water, chestnuts, Hoisin glaze, Fried farkay noodles, Peanuts, Cilantro, Baby ice berg lettuce cups, Soy, chili sauce",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Vegetable and Vegetarian Lettuce Wraps",
+        "type": "wok and sautee",
+        "ingredients": "Soy, Red pepper, Mushrooms, Carrot, Red onion, Green onion, Nappa cabbage, Zucchini, Hoisin glaze, Fried farkay noodles, Peanuts, Cilantro, Baby ice berg lettuce cups, Soy chili sauce",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "New York Steak",
+        "type": "steak",
+        "ingredients": "11 oz New York strip loin, Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion Yellow cheddar, Seasonal Vegetables, Garlic butter, JOEY steak spice",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Peppercorn New York",
+        "type": "steak",
+        "ingredients": "11 oz New York strip loin, Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion Yellow cheddar, Seasonal Vegetables, Garlic butter, Joeys Steak spice, Peppercorn sauce",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Filet Mignon",
+        "type": "steak",
+        "ingredients": "7 oz Tenderloinm Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion Yellow cheddar, Seasonal Vegetables, Garlic butter, JOEY steak spice",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "CAB PRIME Sirloin",
+        "type": "steak",
+        "ingredients": "7 oz Sirloin, Mashed Potato Spring Rolls: Sour cream, Bacon bits, Green onion, Yellow cheddar, Seasonal Vegetables,Garlic butter,JOEY steak spice",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Blue Cheese Sirloin",
+        "type": "steak",
+        "ingredients": "7 oz Sirloin, Mashed Potato Spring Rolls: Sour cream, Bacon bits,Green onion, Yellow cheddar, gratedSeasonal Vegetables,JOEY steak spice, Blue cheese butter",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Steak & Prawns",
+        "type": "steak",
+        "ingredients": "7 oz Sirloin, Crispy mashed potato, Sour cream Bacon bits, Green onion Cheddar cheese, Seasonal vegetables, Garlic butter",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Steak & Rainbow USA",
+        "type": "steak",
+        "ingredients": "5 oz Sirloin Steak, Ponzu sauce, Garlic chili sauce, Salmon Sushi rice, Umami mayo, Crispy tempura bits, Lime, Shaved serrano peppers",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Steak Frites SEATTLE",
+        "type": "steak",
+        "ingredients": "5oz Sirloin steak, Garlic butter, Parsley butter, JOEY steak spice, Arugula Burger tomato slices, Balsamic olive oil dressing, French fries",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Steak & Pressed Sushi USA",
+        "type": "steak",
+        "ingredients": "5 oz Sirloin Steak, Ponzu sauce, Garlic chili sauce, Salmon Sushi rice, Umami mayo, Crispy tempura bits, Lime, Shaved serrano peppers",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Balsamic Braised Beef Short Ribs",
+        "type": "entree",
+        "ingredients": "Braised Short Rib, Jus, Mashed potatoes, Asparagus, Grape tomatoes, Pickled shimeji mushrooms, Shallots, Rosemary salt",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Rotisserie Chicken Entree",
+        "type": "entree",
+        "ingredients": "Rotisserie chicken, Mashed potatoes, Rotisserie vegetables, Lemon juice, S&P, Parsley, Sundried tomato gravy, Parsley sprig",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Herb Crush Salmon",
+        "type": "entree",
+        "ingredients": "Salmon fillet, Grainy mustard and maple butter, Herb rub, Cooked quinoa, Roasted cauliflower, Snap peas, Corn, Red Pepper, Grape tomatoes, Lemon juice, Shaved fennel, Lemon olive oil dressing",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Bistro Plate",
+        "type": "entree",
+        "ingredients": "Rotisserie chicken, French fries, Coleslaw, Sundried tomato gravy",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Japanese Salad and Pressed Sushi",
+        "type": "entree",
+        "ingredients": "Pressed salmon sushi, Teriyaki reduction, Umami sauce, Lime wedge, Black pepper, Tempura bits, Serrano peppers, Pickled ginger, Katsu salad portion, Arugula, Peanuts, Red onion, Cilantro, Carrot & miso dressing, Serrano peppers, Sesame seeds, B & W, Carrot & miso dressing, Fried yam, Amorosa tomato",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Chef's Daily Rotisserie",
+        "type": "entree",
+        "ingredients": "Hourly roasted rotisserie chicken, Mashed potatoes, Cauliflower, Snap peas, Red pepper, Grilled corn, selection of sauces",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Individually Baked Apple Pie",
+        "type": "dessert",
+        "ingredients": "Puff pastry, Roasted apples, Cinnamon, Rolled oats, Almonds, Brown sugar, Icing sugar, Caramel Sauce, Ice cream",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Molten Chocolate Cake",
+        "type": "dessert",
+        "ingredients": "Soufflé, Vanilla ice cream, Raspberries, Raspberry puree",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Raspberry Butterscotch Mousse",
+        "type": "dessert",
+        "ingredients": "Butterscotch budino, Sponge toffee crush, Salted caramel sauce, Vanilla whipped cream, Raspberry purée, Raspberries",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Garlic Bread",
+        "type": "side",
+        "ingredients": "Garlic bread",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Aromatic Rice",
+        "type": "side",
+        "ingredients": "",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Asparagus",
+        "type": "side",
+        "ingredients": "Asparagus",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Prawn Skewer",
+        "type": "side",
+        "ingredients": "Prawns",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Papadam",
+        "type": "side",
+        "ingredients": "papadam",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Fries",
+        "type": "side",
+        "ingredients": "potatoes",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Naan Bread",
+        "type": "side",
+        "ingredients": "Naan",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Mashed Potatoes",
+        "type": "side",
+        "ingredients": "Potatoes",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Brown Rice",
+        "type": "side",
+        "ingredients": "brown rice",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Quinoa",
+        "type": "side",
+        "ingredients": "quinoa",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Peppercorn Sauce",
+        "type": "side",
+        "ingredients": "peppercorn",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side Crispy Mashed Potato",
+        "type": "side",
+        "ingredients": "potatoes",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Grilled Seasonal Vegetables",
+        "type": "side",
+        "ingredients": "Seasonal Vegatables",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "Side White Rice",
+        "type": "side",
+        "ingredients": "white rice",
+        "allergens": "",
+        "description": ""
+      },
+      {
+        "name": "allergen free dish aka Water",
         "type": "dessert",
         "ingredients": "water",
         "allergens": "",
         "description": "just water I guess"
       }
-    ]
-  },
-  {
-    "restaurant": "DOMINOS",
-    "desc": "Dominos Pizza, Inc, now branded simply as Domino's, is an American pizza restaurant chain founded in 1960",
-    "address": "2724 NE 45th St Ste A, Seattle, WA 98105",
-    "phone": "2065259551",
-    "allergens": [
-      "nuts",
-      "eggs",
-      "gluten",
-      "fish",
-      "meat",
-      "dairy",
-      "soy"
-    ],
-    "dishType": [
-      "pizza",
-      "entree",
-      "sides",
-      "dessert",
-      "salad",
-      "sandwich"
-    ],
-    "menu": [
-      {
-        "name": "BUFFALO CHICKEN Pizza",
-        "type": "Pizza",
-        "ingredients": "Cheese,  Milk, Sodium Propionate (Added As A Preservative)], White American Cheese, chicken breast, Modified Food Starch, Vinegar, Salt, Sodium Phosphates], Onions, Cheddar Cheese , Hot Sauce [Hot Aged Red Cayenne Peppers, Distilled Vinegar, Water, Salt, Spice, Dehydrated Garlic, Xanthan Gum].",
-        "allergens": "gluten, dairy, meat, soy",
-        "description": "Pizza topped with buffalo chicken "
-      },
-      {
-        "name": "CALI CHICKEN BACON RANCH ",
-        "type": "Pizza",
-        "ingredients": "Provolone Cheese , chicken breast, Garlic Parmesan Sauce , Pizza Cheese [Part Skim Mozzarella Cheese (Pasteurized Milk, Cultures, Salt, Enzymes, Modified Food Starch, Cellulose (Added to Prevent Caking), Nonfat Milk, Whey Protein Concentrate, Natural Flavors, Sodium Propionate (Added as a Preservative)], Bacon [Pork, Water, Salt, Sugar, Smoke Flavoring, Sodium Phosphates, Sodium Erythorbate, Sodium Nitrite. May contain sodium ascorbate, dextrose], Diced Tomatoes [Fresh Vine-Ripened California Tomatoes, Tomato Juice, Salt, Calcium Chloride, Citric Acid].",
-        "allergens": "gluten, dairy, meat, soy",
-        "description": "A Speciality Pizza"
-      },
-      {
-        "name": "DELUXE",
-        "type": "entree",
-        "ingredients": "Pizza Cheese [Part Skim Mozzarella Cheese (Pasteurized Milk, Cultures, Salt, Enzymes, Modified Food Starch, Cellulose (Added to Prevent Caking), Nonfat Milk, Whey Protein Concentrate, Natural Flavors, Sodium Propionate (Added as a Preservative)], Pizza Sauce [Tomato Puree (Water, Tomato Paste), Sugar, Salt, Spices, Garlic, Soybean Oil, and Citric Acid], Fresh Mushrooms, Italian Sausage [Pork, Water, Salt, Spices, Dextrose, Sodium Phosphates, Natural Flavor, Dehydrated Garlic, Onion Powder, Paprika Oleoresin], Pepperoni [Pork and Beef, Salt, Spices, Dextrose, Lactic Acid Starter Culture, Oleoresin of Paprika, Flavoring, Sodium Nitrite, BHA, BHT, Citric Acid], Fresh Yellow Onions, Fresh Green Peppers. ",
-        "allergens": "gluten, dairy, meat, soy",
-        "description": "A Speciality Pizza"
-      },
-      {
-        "name": "EXTRAVAGANZZA",
-        "type": "Pizza",
-        "ingredients": "Pizza Cheese [Part Skim Mozzarella Cheese (Pasteurized Milk, Cultures, Salt, Enzymes, Modified Food Starch, Cellulose (Added to Prevent Caking), Nonfat Milk, Whey Protein Concentrate, Natural Flavors, Sodium Propionate (Added as a Preservative)], Pizza Sauce [Tomato Puree (Water, Tomato Paste), Sugar, Salt, Spices, Garlic, Soybean Oil, and Citric Acid], Fresh Mushrooms, Italian Sausage [Pork, Water, Salt, Spices, Dextrose, Sodium Phosphates, Natural Flavor, Dehydrated Garlic, Onion Powder, Paprika Oleoresin], Pepperoni [Pork and Beef, Salt, Spices, Dextrose, Lactic Acid Starter Culture, Oleoresin of Paprika, Flavoring, Sodium Nitrite, BHA, BHT, Citric Acid], Fresh Yellow Onions, Fresh Green Peppers. ",
-        "allergens": "gluten, dairy, meat, soy",
-        "description": "A Speciality Pizza"
-      },
-      {
-        "name": "HONOLULU HAWAIIAN",
-        "type": "Pizza",
-        "ingredients": "Pizza Sauce [Tomato Puree (Water, Tomato Paste), Sugar, Salt, Spices, Garlic, Soybean Oil, and Citric Acid], Provolone Cheese [Shredded Provolone Cheese (Pasteurized Milk, Cultures, Salt, Enzymes), Nonfat Milk, Sodium Propionate (Added As A Preservative)], Pizza Cheese [Part Skim Mozzarella Cheese (Pasteurized Milk, Cultures, Salt, Enzymes, Modified Food Starch, Cellulose (Added to Prevent Caking), Nonfat Milk, Whey Protein Concentrate, Natural Flavors, Sodium Propionate (Added as a Preservative)], Ham [Pork (Cured With Water, Salt, Sodium Lactate, Sugar, Sodium Phosphate, Sodium Diacetate, Sodium Erythorbate, Sodium Nitrite)], Bacon [Pork, Water, Salt, Sugar, Smoke Flavoring, Sodium Phosphates, Sodium Erythorbate, Sodium Nitrite. May contain sodium ascorbate, dextrose], Pineapple [Pineapple Tidbits, Water, Sugar, Citric Acid, Ascorbic Acid], Roasted Red Peppers [Red Peppers, Water, Salt, Citric Acid, Calcium Chloride].",
-        "allergens": "gluten, dairy, meat, soy",
-        "description": "A Speciality Pizza"
-      },
-      {
-        "name": "MEATZZA",
-        "type": "Pizza",
-        "ingredients": "Pizza Cheese [Part Skim Mozzarella Cheese (Pasteurized Milk, Cultures, Salt, Enzymes, Modified Food Starch, Cellulose (Added to Prevent Caking), Nonfat Milk, Whey Protein Concentrate, Natural Flavors, Sodium Propionate (Added as a Preservative)], Pizza Sauce [Tomato Puree (Water, Tomato Paste), Sugar, Salt, Spices, Garlic, Soybean Oil, and Citric Acid], Ham [Pork (Cured With Water, Salt, Sodium Lactate, Sugar, Sodium Phosphate, Sodium Diacetate, Sodium Erythorbate, Sodium Nitrite)], Italian Sausage [Pork, Water, Salt, Spices, Dextrose, Sodium Phosphates, Natural Flavor, Dehydrated Garlic, Onion Powder, Paprika Oleoresin], Beef [Beef, Water, 2% or less of the following: Canola Oil, Grill Flavor (From Sunflower Oil), Gum Arabic, Maltodextrin (from Potato), Natural Flavor, Salt, Natural Smoke Flavor, Sodium Phosphates, Spice, Tricalcium Phosphate], Pepperoni [Pork and Beef, Salt, Spices, Dextrose, Lactic Acid Starter Culture, Oleoresin of Paprika, Flavoring, Sodium Nitrite, BHA, BHT, Citric Acid].",
-        "allergens": "gluten, dairy, meat, soy",
-        "description": "A Speciality Pizza"
-      },
-      {
-        "name": "MEMPHIS BBQ CHICKEN",
-        "type": "Pizza",
-        "ingredients": "Provolone Cheese [Shredded Provolone Cheese (Pasteurized Milk, Cultures, Salt, Enzymes), Nonfat Milk, Sodium Propionate (Added As A Preservative)], Grilled Chicken [Boneless, Skinless Chicken Breast With Rib Meat, Water, Seasoning [Yeast Extract, Garlic Powder, Buttermilk Powder, Onion Powder, Maltodextrin, Modified Corn Starch, Lipolyzed Butter Oil, Salt, Whey Powder (Milk), Dehydrated Garlic, Chicken Powder, Flavors, Sunflower Oil, Disodium Guanylate And Disodium Inosinate, Spices, Chicken Fat, Chicken Broth, Sodium Caseinate (Milk), and Sodium Phosphate], Modified Food Starch, Vinegar, Salt, Sodium Phosphates], Brown BBQ Sauce [Water, High Fructose Corn Syrup, Tomato Paste, Molasses, Vinegar, Seasoning [Salt, Spices, Natural Flavors, Garlic Powder, Onion Powder, Lemon Juice (Corn Syrup Solids, Lemon Juice Solids, Lemon Oil), Turmeric], Modified Corn Starch, Caramel Color, Natural Flavors (Including Smoke Flavor), Xanthan Gum, Sodium Benzoate (Preservative)], Pizza Cheese [Part Skim Mozzarella Cheese (Pasteurized Milk, Cultures, Salt, Enzymes, Modified Food Starch, Cellulose (Added to Prevent Caking), Nonfat Milk, Whey Protein Concentrate, Natural Flavors, Sodium Propionate (Added as a Preservative)], Fresh Yellow Onions, Cheddar Cheese [Shredded Pasteurized Milk, Cheese Cultures, Salt, Enzymes, Annatto Vegetable Color Added, Corn Starch, Potato Starch and Powdered Cellulose added to prevent caking, Natamycin (A Natural Mold Inhibitor)].",
-        "allergens": "gluten, dairy, meat, soy",
-        "description": "A Speciality Pizza"
-      },
-      {
-        "name": "BARBEQUE CHICKEN WINGS",
-        "type": "Sides",
-        "ingredients": "Chicken Wings [Chicken Wing Sections, Water, Seasoning [Modified Food Starch, Rice Flour, Potato Dextrin, Salt, Leavening (Sodium Acid Pyrophosphate, Sodium Bicarbonate), Xanthan Gum], Seasoning [Maltodextrin, Dextrose, Modified Corn Starch, Modified Food Starch, Tapioca Maltodextrin, Modified Tapioca Starch, Salt, Caramel Color, Yellow Corn Flour, Oleoresin Turmeric, Grill Flavor (from Sunflower Oil), Natural Smoke Flavor, Autolyzed Yeast Extract, Oleoresin Paprika, Sodium Alginate, Natural Flavoring, Natural Flavor, Spice Extractive], Salt, Sodium Phosphates. Coated With: Modified Corn Starch, Rice Flour, Corn Syrup Solids, Dextrose, Sodium Alginate. Blanched in Vegetable Oil], Brown Barbeque Sauce [Water, High Fructose Corn Syrup, Tomato Paste, Molasses, Vinegar, Seasoning [Salt, Spices, Natural Flavors, Garlic Powder, Onion Powder, Lemon Juice (Corn Syrup Solids, Lemon Juice Solids, Lemon Oil), Turmeric], Modified Corn Starch, Caramel Color, Natural Flavors (Including Smoke Flavor), Xanthan Gum, Sodium Benzoate (Preservative)], Red Barbeque Sauce [Distilled Vinegar, Water, Tomato Paste, High Fructose Corn Syrup, Corn Syrup Solids, Salt, Molasses, Spices, Onion Powder, Garlic Powder, Sodium Benzoate (0.1% as preservative), Sugar, Mustard Bran, Caramel Color].",
-        "allergens": "soy",
-        "description": "Delicious wings"
-      },
-      {
-        "name": "GARLIC BREAD TWISTS",
-        "type": "Sides",
-        "ingredients": "Pan Dough [Enriched Flour (Wheat Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Palm Oil With Natural Butter Flavor and Soy Lecithin, Soybean Oil, Sugar, Salt, Whey, Maltodextrin, Dextrose, Dough Conditioners (Sodium Stearoyl, Lactylate, Enzyme, Calcium Sulfate, Ascorbic Acid, Calcium Phosphate, L-Cysteine), Yeast], Garlic Oil Blend [Butter Flavored Oil (Liquid and Hydrogenated Soybean Oil, Palm Oil, Salt, Natural Flavors (contain Canola Oil and Lipolyzed Butter Oil), Sunflower and Soy Lecithin, Lactic Acid, Colored with Turmeric and Beta Carotene, Artificial Flavor, TBHQ and Citric acid (protect flavor), Vitamin A Palmitate, Autolyzed Yeast Extract, Beta Carotene (color)), Dehydrated Garlic, Parmesan Cheese (part-skim milk, cheese cultures, salt, enzymes), Salt, Dehydrated Parsley, Spice, Annatto Extract (color), Natural Flavor, Citric Acid, Lactic Acid, Oleoresin Rosemary].",
-        "allergens": "Milk, Soy, Wheat",
-        "description": "Delicious Bread Twists"
-      },
-      {
-        "name": "CINNAMON BREAD TWISTS",
-        "type": "dessert",
-        "ingredients": "Pan Dough [Enriched Flour (Wheat Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Palm Oil With Natural Butter Flavor and Soy Lecithin, Soybean Oil, Sugar, Salt, Whey, Maltodextrin, Dextrose, Dough Conditioners (Sodium Stearoyl, Lactylate, Enzyme, Calcium Sulfate, Ascorbic Acid, Calcium Phosphate, L-Cysteine), Yeast], Cinna Magic Blend [Butter Flavored Oil (Soybean Oil, Hydrogenated Soybean Oil, Salt, Soy Lecithin, Natural and Artificial Flavors, TBHQ and Citric Acid [to help preserve freshness], Beta Carotene [Color]), Sugar, Cinnamon].",
-        "allergens": "Milk, Soy, Wheat",
-        "description": "Delicious Bread Twists"
-      },
-      {
-        "name": "MARBLED COOKIE BROWNIE",
-        "type": "dessert",
-        "ingredients": "Sugar, Enriched Bleached Flour (Bleached Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Margarine (Palm Oil, Soybean Oil, and Hydrogenated Soybean Oil, Water, Salt, Whey [Milk], Mono- & Diglycerides, Soy Lecithin, Natural and Artificial Flavors, Citric Acid, Preservatives [Sodium Benzoate, Calcium Disodium EDTA], Beta Carotene [Color], Vitamin A Palmitate Added), Milk Chocolate Chunks (Sugar, Milk, Cocoa Butter, Unsweetened Chocolate, Unsweetened Chocolate [Processed with Alkali], Dextrose, Milkfat, Soy Lecithin, Artificial Flavor), Eggs, Brown Sugar, Cocoa (Processed with Alkali), Leavening (Baking Soda, Sodium Acid Pyrophosphate, Monocalcium Phosphate), Salt, Artificial Flavor, Caramel Color, Corn Starch.",
-        "allergens": "Egg, Milk, Soy, Wheat, Peanuts, tree nuts.",
-        "description": "Delicious cookie"
-      },
-      {
-        "name": "CHICKEN APPLE PECAN SALAD",
-        "type": "Salad",
-        "ingredients": "SPRING MIX (BABY LETTUCES [GREEN TANGO, GREEN AND RED ROMAINE, RED LEAF, LOLLO ROSSA, PARELLA, RED AND GREEN OAK], BABY GREENS [MIZUNA, RED AND GREEN CHARD, FRISÉE, SPINACH, TATSOI], RADICCHIO, INGREDIENTS MAY VARY BY SEASON), ROASTED WHITE MEAT CHICKEN (CHICKEN BREAST WITH RIB MEAT, WATER, SODIUM LACTATE, SEASONING [SALT, SUGAR, ARTIFICIAL CHICKEN FLAVOR {HYDROLYZED CORN PROTEIN, AUTOLYZED YEAST EXTRACT, THIAMINE HYDROCHLORIDE, DISODIUM INOSINATE, DISODIUM GUANYLATE}, DEXTROSE, NATURAL FLAVORING], MODIFIED POTATO STARCH, DEXTROSE, POTASSIUM LACTATE, SODIUM PHOSPHATES, SODIUM DIACETATE), APPLES (CALCIUM ASCORBATE [ADDED TO MAINTAIN FRESHNESS AND COLOR]), CHEDDAR CHEESE (CHEDDAR CHEESE [PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES, ANNATTO {VEGETABLE COLOR}], POWDERED CELLULOSE [TO PREVENT CAKING], NATAMYCIN [A NATURAL MOLD INHIBITOR]), DRIED CRANBERRIES (CRANBERRIES, SUGAR, SUNFLOWER OIL), PRALINE PECANS (SUGAR, PECANS, BUTTER [CREAM, NATURAL FLAVORING, MILK], CORN SYRUP, SALT)",
-        "allergens": "Milk, Tree Nuts (Pecans), Pecans",
-        "description": "Delicious Salad"
-      },
-      {
-        "name": "CLASSIC GARDEN SALAD",
-        "type": "Salad",
-        "ingredients": "ROMAINE AND ICEBERG LETTUCE, GRAPE TOMATOES, CHEDDAR CHEESE (CHEDDAR CHEESE [PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES, ANNATTO {VEGETABLE COLOR}], POWDERED CELLULOSE [TO PREVENT CAKING], NATAMYCIN [A NATURAL MOLD INHIBITOR]), BRIOCHE GARLIC CROUTONS (ENRICHED WHEAT FLOUR [WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID], SUNFLOWER OIL, PALM OIL SHORTENING, SUGAR, SALT, GARLIC POWDER, YEAST), RED ONION, RED CABBAGE, CARROTS",
-        "allergens": "Milk, Wheat",
-        "description": "Delicious Salad"
-      },
-      {
-        "name": "BUFFALO CHICKEN WITH BLUE CHEESE SANDWICH",
-        "type": "Sandwich",
-        "ingredients": "Sandwich Bread [Unbleached Flour (Wheat, Malted Barley), Water, Yeast, Salt, Contains Less Than 2% Of Each Of The Following: Vinegar, Ascorbic Acid, Wheat Gluten, Guar Gum, Enzymes And Calcium Propionate (Preservative). Topical: Water, Potassium Sorbate], Grilled Chicken [Boneless, Skinless Chicken Breast With Rib Meat, Water, Seasoning [Yeast Extract, Garlic Powder, Buttermilk Powder, Onion Powder, Maltodextrin, Modified Corn Starch, Lipolyzed Butter Oil, Salt, Whey Powder (Milk), Dehydrated Garlic, Chicken Powder, Flavors, Sunflower Oil, Disodium Guanylate And Disodium Inosinate, Spices, Chicken Fat, Chicken Broth, Sodium Caseinate (Milk), and Sodium Phosphate], Modified Food Starch, Vinegar, Salt, Sodium Phosphates], Cheddar Cheese [Pasteurized Milk, Cheese Cultures, Salt, Enzymes, Annatto Vegetable Color Added, Corn Starch, Potato Starch and Powdered Cellulose added to prevent caking, Natamycin (A Natural Mold Inhibitor)], Blue Cheese Sauce [Soybean Oil, Water, Blue Cheese (Milk, Cheese Cultures, Salt, Enzymes), Distilled Vinegar, High Fructose Corn Syrup, Egg Yolk, Salt, Potassium Sorbate And Sodium Benzoate Added As Preservatives, Xanthan Gum, Lactic Acid, Garlic, Natural Flavor, Calcium Disodium EDTA Added To Protect Flavor], Fresh Onions, Provolone [Pasteurized Milk, Cheese Culture, Salt, Enzymes], Hot Sauce [Hot Aged Red Cayenne Peppers, Distilled Vinegar, Water, Salt, Spice, Dehydrated Garlic, Xanthan Gum], Pizza Cheese [Part Skim Mozzarella Cheese (Pasteurized Milk, Cultures, Salt, Enzymes, Modified Food Starch, Cellulose (Added to Prevent Caking), Nonfat Milk, Whey Protein Concentrate, Natural Flavors, Sodium Propionate (Added as a Preservative)], Butter Flavored Oil [Soybean Oil, Hydrogenated Soybean Oil, Salt, Soy Lecithin, Artificial Flavor, TBHQ and Citric Acid (added to help preserve freshness), Beta Carotene (Color)]",
-        "allergens": "Egg, Milk, Soy, Wheat",
-        "description": "Delicious Sandwich"
-      },
-      {
-        "name": "",
-        "type": "",
-        "ingredients": "",
-        "allergens": "",
-        "description": ""
-      }
+      //        ,
+      //            {
+      //                "name": "",
+      //                "type": "",
+      //                "ingredients": "",
+      //                "allergens": "",
+      //                "description": ""
+      //            }
     ]
   },
   {
@@ -356,7 +486,8 @@
       "appetizers",
       "sandwiches",
       "specialties",
-      "salads"
+      "salads",
+      "steak"
     ],
     "menu": [
       {
@@ -421,6 +552,48 @@
         "ingredients": "canola oil,carrot , chicken breast, cumin, chili powder, butter, onion, garlic, poblano chiles, flour, salsa verde, oregano, white beans, sour cream, rice, green onion",
         "allergens": "milk, gluten, soy",
         "description": "A Generous Bowl of Chicken, White Beans, Roasted Green Chiles, Onions and Garlic with a Touch of Cream. Garnished with Steamed White Rice and Fresh Salsa"
+      },
+      {
+        "name": "Crispy Crab Wontons",
+        "type": "appetizers",
+        "ingredients": "olive oil, garlic, ginger, wheat flour, onion, oyster sauce, sesame oil, crab",
+        "allergens": "milk, eggs, gluten, soy, fish",
+        "description": "Crabmeat Blended with Cream Cheese, Green Onion, Water Chestnuts and Sweet Chili Sauce Fried Crisp in Wonton Wrappers"
+      },
+      {
+        "name": "Cuban Sandwich",
+        "type": "sandwiches",
+        "ingredients": "cuban bread, ham, roasted pork, swiss cheese, pickles, mustard, salami",
+        "allergens": "milk, eggs, gluten, soy",
+        "description": "Slow Roasted Pork, Ham, Swiss Cheese, Pickles, Mustard and Mayonnaise on a Grilled and Pressed Cuban-Style Roll"
+      },
+      {
+        "name": "California Cheesesteak",
+        "type": "sandwiches",
+        "ingredients": "Steak, Mushroom, Onions, peppers, cheese, toasted Roll",
+        "allergens": "milk, gluten",
+        "description": "Thinly Sliced Grilled Steak Covered with Sauteed Mushrooms, Onions, Peppers and Cheese on a Toasted Roll"
+      },
+      {
+        "name": "Grilled Cheese",
+        "type": "sandwiches",
+        "ingredients": "milk, egg, bread, cheese",
+        "allergens": "milk, egg, gluten, soy",
+        "description": "Served on Egg Bread with Your Choice of Cheese"
+      },
+      {
+        "name": "Seared Tuna Tataki Salad",
+        "type": "salad",
+        "ingredients": "Ahi tuna, Avocado, Tomato, mixed greens, wasabi vinegrette",
+        "allergens": "fish, gluten, soy",
+        "description": "Fresh Ahi Lightly Seared and Served Rare with Avocado, Tomato and Mixed Greens Tossed with Wasabi Vinaigrette"
+      },
+      {
+        "name": "Herb-crusted Salmon Salad",
+        "type": "salad",
+        "ingredients": "Salmon, lettuce, tomato, vegetables, Balsamic Vinaigrette",
+        "allergens": "fish, gluten, soy",
+        "description": "Our Wonderful Fresh Herb-Crusted Salmon Served Chilled on Top of Baby Lettuces, Tomato and Vegetables. Tossed in Our Balsamic Vinaigrette"
       }
     ]
   }
