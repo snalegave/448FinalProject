@@ -301,7 +301,7 @@
         "name": "Rotisserie Chicken Entree",
         "type": "entree",
         "ingredients": "Rotisserie chicken, Mashed potatoes, Rotisserie vegetables, Lemon juice, S&P, Parsley, Sundried tomato gravy, Parsley sprig",
-        "allergens": "",
+        "allergens": "meat",
         "description": "Delicious chicken"
       },
       {
@@ -572,14 +572,14 @@
         "name": "CHICKEN APPLE PECAN SALAD",
         "type": "Salad",
         "ingredients": "SPRING MIX (BABY LETTUCES [GREEN TANGO, GREEN AND RED ROMAINE, RED LEAF, LOLLO ROSSA, PARELLA, RED AND GREEN OAK], BABY GREENS [MIZUNA, RED AND GREEN CHARD, FRISÉE, SPINACH, TATSOI], RADICCHIO, INGREDIENTS MAY VARY BY SEASON), ROASTED WHITE MEAT CHICKEN (CHICKEN BREAST WITH RIB MEAT, WATER, SODIUM LACTATE, SEASONING [SALT, SUGAR, ARTIFICIAL CHICKEN FLAVOR {HYDROLYZED CORN PROTEIN, AUTOLYZED YEAST EXTRACT, THIAMINE HYDROCHLORIDE, DISODIUM INOSINATE, DISODIUM GUANYLATE}, DEXTROSE, NATURAL FLAVORING], MODIFIED POTATO STARCH, DEXTROSE, POTASSIUM LACTATE, SODIUM PHOSPHATES, SODIUM DIACETATE), APPLES (CALCIUM ASCORBATE [ADDED TO MAINTAIN FRESHNESS AND COLOR]), CHEDDAR CHEESE (CHEDDAR CHEESE [PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES, ANNATTO {VEGETABLE COLOR}], POWDERED CELLULOSE [TO PREVENT CAKING], NATAMYCIN [A NATURAL MOLD INHIBITOR]), DRIED CRANBERRIES (CRANBERRIES, SUGAR, SUNFLOWER OIL), PRALINE PECANS (SUGAR, PECANS, BUTTER [CREAM, NATURAL FLAVORING, MILK], CORN SYRUP, SALT)",
-        "allergens": "Milk, Tree Nuts (Pecans), Pecans",
+        "allergens": "Milk, diary, nuts, Tree Nuts (Pecans), Pecans",
         "description": "Delicious Salad"
       },
       {
         "name": "CLASSIC GARDEN SALAD",
         "type": "Salad",
         "ingredients": "ROMAINE AND ICEBERG LETTUCE, GRAPE TOMATOES, CHEDDAR CHEESE (CHEDDAR CHEESE [PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES, ANNATTO {VEGETABLE COLOR}], POWDERED CELLULOSE [TO PREVENT CAKING], NATAMYCIN [A NATURAL MOLD INHIBITOR]), BRIOCHE GARLIC CROUTONS (ENRICHED WHEAT FLOUR [WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID], SUNFLOWER OIL, PALM OIL SHORTENING, SUGAR, SALT, GARLIC POWDER, YEAST), RED ONION, RED CABBAGE, CARROTS",
-        "allergens": "Milk, Wheat",
+        "allergens": "Milk, dairy, Wheat",
         "description": "Delicious Salad"
       },
       {
@@ -588,13 +588,6 @@
         "ingredients": "Sandwich Bread [Unbleached Flour (Wheat, Malted Barley), Water, Yeast, Salt, Contains Less Than 2% Of Each Of The Following: Vinegar, Ascorbic Acid, Wheat Gluten, Guar Gum, Enzymes And Calcium Propionate (Preservative). Topical: Water, Potassium Sorbate], Grilled Chicken [Boneless, Skinless Chicken Breast With Rib Meat, Water, Seasoning [Yeast Extract, Garlic Powder, Buttermilk Powder, Onion Powder, Maltodextrin, Modified Corn Starch, Lipolyzed Butter Oil, Salt, Whey Powder (Milk), Dehydrated Garlic, Chicken Powder, Flavors, Sunflower Oil, Disodium Guanylate And Disodium Inosinate, Spices, Chicken Fat, Chicken Broth, Sodium Caseinate (Milk), and Sodium Phosphate], Modified Food Starch, Vinegar, Salt, Sodium Phosphates], Cheddar Cheese [Pasteurized Milk, Cheese Cultures, Salt, Enzymes, Annatto Vegetable Color Added, Corn Starch, Potato Starch and Powdered Cellulose added to prevent caking, Natamycin (A Natural Mold Inhibitor)], Blue Cheese Sauce [Soybean Oil, Water, Blue Cheese (Milk, Cheese Cultures, Salt, Enzymes), Distilled Vinegar, High Fructose Corn Syrup, Egg Yolk, Salt, Potassium Sorbate And Sodium Benzoate Added As Preservatives, Xanthan Gum, Lactic Acid, Garlic, Natural Flavor, Calcium Disodium EDTA Added To Protect Flavor], Fresh Onions, Provolone [Pasteurized Milk, Cheese Culture, Salt, Enzymes], Hot Sauce [Hot Aged Red Cayenne Peppers, Distilled Vinegar, Water, Salt, Spice, Dehydrated Garlic, Xanthan Gum], Pizza Cheese [Part Skim Mozzarella Cheese (Pasteurized Milk, Cultures, Salt, Enzymes, Modified Food Starch, Cellulose (Added to Prevent Caking), Nonfat Milk, Whey Protein Concentrate, Natural Flavors, Sodium Propionate (Added as a Preservative)], Butter Flavored Oil [Soybean Oil, Hydrogenated Soybean Oil, Salt, Soy Lecithin, Artificial Flavor, TBHQ and Citric Acid (added to help preserve freshness), Beta Carotene (Color)]",
         "allergens": "Egg, Milk, Soy, Wheat",
         "description": "Delicious Sandwich"
-      },
-      {
-        "name": "",
-        "type": "",
-        "ingredients": "",
-        "allergens": "",
-        "description": ""
       }
     ]
   },

@@ -114,7 +114,21 @@ class FoodMenu : AppCompatActivity() {
             }
         }
 
+        var newMenu: ArrayList<FoodItem> = arrayListOf()
+        var newMenu1: ArrayList<FoodItem> = arrayListOf()
 
+        for(i in 0..menu.size - 1) {
+            newMenu.add(menu[i])
+        }
+        Log.i("hey", foods.size.toString())
+        Log.i("hey", newMenu.size.toString())
+        for (s in 0 until foods.size -1) {
+            for(i in 0 until newMenu.size -1) {
+                if(foods[s].equals(newMenu[i].name,true)) {
+                    newMenu1.add(newMenu[i])
+                }
+            }
+        }
 
 
         val listView = findViewById<ListView>(R.id.ListView)
@@ -123,7 +137,7 @@ class FoodMenu : AppCompatActivity() {
         listView.setOnItemClickListener { parent, v, position, id ->
             val intent = Intent(this, AboutActivity::class.java)
             val bundle: Bundle = Bundle()
-            bundle.putSerializable("name", menu[position])
+            bundle.putSerializable("name", newMenu1[position])
             intent.putExtras(bundle)
             startActivity(intent)
         }
