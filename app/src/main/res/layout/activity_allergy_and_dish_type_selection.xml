@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllergyAndDishTypeSelection"
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+
+
+        <TextView
+            android:id="@+id/headerAllergyAndDishTypeSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:text="Please select your allergies and what dishes you would like to view:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+        <TextView
+            android:id="@+id/choosingDietText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:text="Are you on a specific diet?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <com.google.android.flexbox.FlexboxLayout
+            android:id= "@+id/dietCheckList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:alignItems="stretch"
+            app:alignContent="stretch"
+            android:orientation="horizontal">
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:id="@+id/choosingAllergensText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:text="What food items are you allergic to?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <com.google.android.flexbox.FlexboxLayout
+            android:id= "@+id/allergensCheckList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:alignItems="stretch"
+            app:alignContent="stretch"
+            android:orientation="horizontal">
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/milkCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Milk"  />-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/eggCheckBox"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Eggs"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/fishCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Fish"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/shellFishCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="ShellFish"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/wheatCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Wheat"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/soyCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Soy"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/peanutCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Peanut"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/glutenCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Gluten"  />-->
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/choosingDishTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#ffffff"
+            android:text="What dish type would you like to see?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <com.google.android.flexbox.FlexboxLayout
+            android:id= "@+id/dishTypeCheckList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            app:alignItems="stretch"
+            app:alignContent="stretch"
+            android:orientation="horizontal">
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/appetizerCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Appetizer"  />-->
+
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/soupCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Soup"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/saladCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Salad"  />-->
+        <!--<CheckBox-->
+            <!--android:id="@+id/sandwichCheckBox"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Sandwich"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/wokAndSauteeCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Wok And Sautee"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/steakCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Steak"  />-->
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/entreeCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Entree"  />-->
+
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/dessertCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Dessert"  />-->
+
+        <!--<CheckBox-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:id="@+id/sideCheckBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/choosingAllergensText"-->
+            <!--android:text="Sides"  />-->
+        </com.google.android.flexbox.FlexboxLayout>
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="30dp"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
